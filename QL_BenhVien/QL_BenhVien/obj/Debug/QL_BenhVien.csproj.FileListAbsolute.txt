@@ -1,0 +1,11 @@
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\bin\Debug\QL_BenhVien.exe.config
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\bin\Debug\QL_BenhVien.exe
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\bin\Debug\QL_BenhVien.pdb
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.csproj.AssemblyReference.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.frmDangNhap.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.Properties.Resources.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.csproj.GenerateResource.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.csproj.CoreCompileInputs.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.exe
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.pdb
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\QL_BenhVien\obj\Debug\QL_BenhVien.frmMain.resources
