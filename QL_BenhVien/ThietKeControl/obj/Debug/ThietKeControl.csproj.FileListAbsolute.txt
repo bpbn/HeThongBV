@@ -1,0 +1,8 @@
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\ThietKeControl.dll
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\ThietKeControl.pdb
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.AssemblyReference.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_DanhSach.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.GenerateResource.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.CoreCompileInputs.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.dll
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.pdb

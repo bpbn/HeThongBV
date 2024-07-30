@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_BENHVIEN" Class="QLBVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-QVIL76U;Initial Catalog=QL_BENHVIEN;Persist Security Info=True;User ID=sa;Encrypt=False" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QL_BENHVIENConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-QVIL76U;Initial Catalog=QL_BENHVIEN;Persist Security Info=True;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QL_BENHVIENConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BENH" Member="BENHs">
     <Type Name="BENH">
       <Column Name="MABENH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -32,16 +32,6 @@
       <Association Name="BENHNHAN_PHIEUKHAM" Member="PHIEUKHAMs" ThisKey="MABENHNHAN" OtherKey="MABENHNHAN" Type="PHIEUKHAM" />
     </Type>
   </Table>
-  <Table Name="dbo.CHITIETBACSI" Member="CHITIETBACSIs">
-    <Type Name="CHITIETBACSI">
-      <Column Name="MABACSI" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="HOCHAM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="GIOITHIEU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="GIOITINH" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
-      <Column Name="HINHANH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Association Name="CHITIETBACSI_CHITIETHOCVI" Member="CHITIETHOCVIs" ThisKey="MABACSI" OtherKey="MABACSI" Type="CHITIETHOCVI" />
-    </Type>
-  </Table>
   <Table Name="dbo.CHITIETCHUANDOAN" Member="CHITIETCHUANDOANs">
     <Type Name="CHITIETCHUANDOAN">
       <Column Name="MATOATHUOC" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -52,10 +42,10 @@
   </Table>
   <Table Name="dbo.CHITIETHOCVI" Member="CHITIETHOCVIs">
     <Type Name="CHITIETHOCVI">
-      <Column Name="MABACSI" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MANHANVIEN" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MAHOCVI" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="CHITIETBACSI_CHITIETHOCVI" Member="CHITIETBACSI" ThisKey="MABACSI" OtherKey="MABACSI" Type="CHITIETBACSI" IsForeignKey="true" />
       <Association Name="HOCVI_CHITIETHOCVI" Member="HOCVI" ThisKey="MAHOCVI" OtherKey="MAHOCVI" Type="HOCVI" IsForeignKey="true" />
+      <Association Name="NHANVIEN_CHITIETHOCVI" Member="NHANVIEN" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="NHANVIEN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.CHITIETTOATHUOC" Member="CHITIETTOATHUOCs">
@@ -92,12 +82,14 @@
       <Column Name="MANHANVIEN" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENNHANVIEN" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
       <Column Name="CHUCVU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="MATAIKHOAN" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="GIOITINH" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
       <Association Name="NHANVIEN_TOATHUOC" Member="TOATHUOCs" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="TOATHUOC" />
+      <Association Name="NHANVIEN_CHITIETHOCVI" Member="CHITIETHOCVIs" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="CHITIETHOCVI" />
       <Association Name="NHANVIEN_LICHLAMVIEC" Member="LICHLAMVIECs" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="LICHLAMVIEC" />
       <Association Name="NHANVIEN_PHIEUHEN" Member="PHIEUHENs" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="PHIEUHEN" />
       <Association Name="NHANVIEN_PHIEUKHAM" Member="PHIEUKHAMs" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="PHIEUKHAM" />
-      <Association Name="TAIKHOAN_NHANVIEN" Member="TAIKHOAN" ThisKey="MATAIKHOAN" OtherKey="MATAIKHOAN" Type="TAIKHOAN" IsForeignKey="true" />
+      <Association Name="NHANVIEN_TAIKHOAN" Member="TAIKHOANs" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="TAIKHOAN" />
+      <Association Name="NHANVIEN_THONGTINBACSI" Member="THONGTINBACSI" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="THONGTINBACSI" Cardinality="One" />
     </Type>
   </Table>
   <Table Name="dbo.PHIEUHEN" Member="PHIEUHENs">
@@ -143,7 +135,17 @@
       <Column Name="TENTAIKHOAN" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="MATKHAU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="LOAITAIKHOAN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Association Name="TAIKHOAN_NHANVIEN" Member="NHANVIENs" ThisKey="MATAIKHOAN" OtherKey="MATAIKHOAN" Type="NHANVIEN" />
+      <Column Name="MANHANVIEN" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="NHANVIEN_TAIKHOAN" Member="NHANVIEN" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THONGTINBACSI" Member="THONGTINBACSIs">
+    <Type Name="THONGTINBACSI">
+      <Column Name="MANHANVIEN" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HOCHAM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GIOITHIEU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HINHANH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="NHANVIEN_THONGTINBACSI" Member="NHANVIEN" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="NHANVIEN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.THUOC" Member="THUOCs">

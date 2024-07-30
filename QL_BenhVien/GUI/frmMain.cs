@@ -16,5 +16,11 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnXemDanhSach_Click(object sender, EventArgs e)
+        {
+            frmDanhSach frmDanhSach = new frmDanhSach();
+            frmDanhSach.Show();
+        }
     }
 }

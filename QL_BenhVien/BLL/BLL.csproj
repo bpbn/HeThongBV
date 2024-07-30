@@ -52,6 +52,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="XuLyDangNhap.cs" />
+    <Compile Include="XuLyTruyVan.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
