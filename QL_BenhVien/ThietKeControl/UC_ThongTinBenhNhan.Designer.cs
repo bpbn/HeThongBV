@@ -68,6 +68,7 @@ namespace ThietKeControl
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.Enabled = false;
             this.txtDiaChi.Location = new System.Drawing.Point(161, 115);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(752, 26);
@@ -84,6 +85,7 @@ namespace ThietKeControl
             // 
             // txtGioiTinh
             // 
+            this.txtGioiTinh.Enabled = false;
             this.txtGioiTinh.Location = new System.Drawing.Point(811, 70);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(102, 26);
@@ -100,6 +102,7 @@ namespace ThietKeControl
             // 
             // txtSDT
             // 
+            this.txtSDT.Enabled = false;
             this.txtSDT.Location = new System.Drawing.Point(419, 71);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(235, 26);
@@ -116,6 +119,7 @@ namespace ThietKeControl
             // 
             // txtNgaySinh
             // 
+            this.txtNgaySinh.Enabled = false;
             this.txtNgaySinh.Location = new System.Drawing.Point(161, 70);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Size = new System.Drawing.Size(145, 26);
@@ -132,6 +136,7 @@ namespace ThietKeControl
             // 
             // txtTenBN
             // 
+            this.txtTenBN.Enabled = false;
             this.txtTenBN.Location = new System.Drawing.Point(590, 23);
             this.txtTenBN.Name = "txtTenBN";
             this.txtTenBN.Size = new System.Drawing.Size(323, 26);
@@ -148,6 +153,7 @@ namespace ThietKeControl
             // 
             // txtMaBN
             // 
+            this.txtMaBN.Enabled = false;
             this.txtMaBN.Location = new System.Drawing.Point(161, 26);
             this.txtMaBN.Name = "txtMaBN";
             this.txtMaBN.Size = new System.Drawing.Size(145, 26);

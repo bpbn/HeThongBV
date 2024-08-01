@@ -17,4 +17,6 @@ namespace ThietKeControl
             InitializeComponent();
         }
     }
+
+
 }

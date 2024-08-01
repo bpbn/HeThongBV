@@ -48,10 +48,10 @@ namespace GUI
             // uC_ThongTinChanDoan1
             // 
             this.uC_ThongTinChanDoan1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_ThongTinChanDoan1.Location = new System.Drawing.Point(16, 378);
+            this.uC_ThongTinChanDoan1.Location = new System.Drawing.Point(16, 292);
             this.uC_ThongTinChanDoan1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_ThongTinChanDoan1.Name = "uC_ThongTinChanDoan1";
-            this.uC_ThongTinChanDoan1.Size = new System.Drawing.Size(950, 400);
+            this.uC_ThongTinChanDoan1.Size = new System.Drawing.Size(950, 457);
             this.uC_ThongTinChanDoan1.TabIndex = 2;
             // 
             // uC_ThongTinKham1

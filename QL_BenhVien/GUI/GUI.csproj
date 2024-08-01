@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BLL">
-      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -48,9 +45,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThietKeControl">
-      <HintPath>..\ThietKeControl\bin\Debug\ThietKeControl.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FrmChanDoan.cs">
@@ -139,9 +133,17 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{aa83cab5-c893-4e68-949d-6555ea37e9ad}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{C910D348-1245-4439-9BF0-68AC4680EDAC}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThietKeControl\ThietKeControl.csproj">
+      <Project>{4f8ebd79-4395-4c42-931f-472d222f4800}</Project>
+      <Name>ThietKeControl</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

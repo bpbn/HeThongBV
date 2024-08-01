@@ -19,4 +19,3 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.CoreCompil
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.dll
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.pdb
-D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
