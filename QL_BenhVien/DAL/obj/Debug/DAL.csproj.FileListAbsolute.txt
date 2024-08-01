@@ -5,3 +5,9 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.csproj.Ass
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\bin\Debug\DAL.dll.config
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\bin\Debug\DAL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\bin\Debug\DAL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.pdb

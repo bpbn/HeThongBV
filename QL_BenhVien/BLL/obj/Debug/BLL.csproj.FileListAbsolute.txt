@@ -9,3 +9,14 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.Cor
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\bin\Debug\BLL.dll.config
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\bin\Debug\BLL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\bin\Debug\BLL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.dll.config
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
