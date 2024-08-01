@@ -1,88 +1,89 @@
-﻿using DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DAL;
 
 namespace BLL
 {
     public class XepLichLamViec
     {
-        private LayDanhSach dsDAL = new LayDanhSach();
+        private LayDanhSach _layDanhSach = new LayDanhSach();
 
         public void XepLichLamViecChoBacSi(DateTime startDate, DateTime endDate)
         {
-            List<NHANVIEN> danhSachBacSi = dsDAL.LayDanhSachBacSi();
-            List<PHONGKHAM> danhSachPhong = dsDAL.LayDanhSachPhong();
-            List<string> danhSachCaLam = new List<string> { "Sáng", "Chiều" };
+            var danhSachBacSi = _layDanhSach.LayDanhSachBacSi();
+            var danhSachPhong = _layDanhSach.LayDanhSachPhong();
 
-            List<DateTime> danhSachNgayLam = new List<DateTime>();
-            for(DateTime date = startDate; date <= endDate;  date = date.AddDays(1))
+            // Xóa lịch làm việc cũ trước khi xếp lịch mới
+            _layDanhSach.XoaLichLamViec();
+
+            var lichLamViecMoi = new List<LICHLAMVIEC>();
+            var random = new Random();
+
+            // Lấy danh sách các ngày trong tuần
+            List<DateTime> danhSachNgay = new List<DateTime>();
+            for (DateTime date = startDate; date <= endDate; date = date.AddDays(1))
             {
-                danhSachNgayLam.Add(date);
+                // Bỏ qua thứ 7 và chủ nhật
+                if (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
+                    continue;
+
+                danhSachNgay.Add(date);
             }
 
-            Dictionary<DateTime, Dictionary<string, Dictionary<string, string>>> lichLamViec = new Dictionary<DateTime, Dictionary<string, Dictionary<string, string>>>();
-
-            foreach (var ngay in danhSachNgayLam)
+            // Xếp lịch cho từng bác sĩ
+            foreach (var ca in new[] { "Sáng", "Chiều" })
             {
-                lichLamViec[ngay] = new Dictionary<string, Dictionary<string, string>>();
-                foreach (var ca in danhSachCaLam)
-                {
-                    lichLamViec[ngay][ca] = new Dictionary<string, string>();
-                    foreach (var phong in danhSachPhong)
-                    {
-                        lichLamViec[ngay][ca][phong.MAPHONG] = null; // Khởi tạo tất cả các vị trí với giá trị null (chưa có bác sĩ nào được gán)
-                    }
-                }
-            }
+                // Khởi tạo cấu trúc dữ liệu để theo dõi số phòng đã mở trong từng ngày
+                var soPhongDaMoTrongNgay = new Dictionary<DateTime, int>();
 
-            foreach (var ngay in danhSachNgayLam)
-            {
-                foreach (var ca in danhSachCaLam)
+                foreach (var ngay in danhSachNgay)
                 {
-                    foreach (var phong in danhSachPhong)
+                    // Khởi tạo số lượng phòng đã mở trong ngày
+                    soPhongDaMoTrongNgay[ngay] = 0;
+
+                    foreach (var bacSi in danhSachBacSi)
                     {
-                        HashSet<string> bacSiDaDuocGan = new HashSet<string>();
-                        foreach (var bacSi in danhSachBacSi)
+                        // Đảm bảo không phân công quá 3 ca cho bác sĩ
+                        if (lichLamViecMoi.Count(llv => llv.MANHANVIEN == bacSi.MANHANVIEN) >= 3)
+                            continue;
+
+                        // Lấy danh sách phòng còn trống trong ngày hiện tại
+                        var phongConTrong = danhSachPhong
+                            .Where(p => !lichLamViecMoi
+                                .Any(llv => llv.NGAYLAM == ngay && llv.CALAM == ca && llv.PHONGLAMVIEC == p.MAPHONG))
+                            .ToList();
+
+                        // Nếu không còn phòng trống hoặc đã mở đủ 10 phòng, bỏ qua ca này
+                        if (!phongConTrong.Any() || soPhongDaMoTrongNgay[ngay] >= 10)
+                            continue;
+
+                        // Chọn phòng ngẫu nhiên từ danh sách phòng còn trống
+                        var phong = phongConTrong[random.Next(phongConTrong.Count)];
+
+                        // Tạo bản ghi lịch làm việc mới
+                        lichLamViecMoi.Add(new LICHLAMVIEC
                         {
-                            if (!bacSiDaDuocGan.Contains(bacSi.MANHANVIEN) && lichLamViec[ngay][ca][phong.MAPHONG] == null)
-                            {
-                                lichLamViec[ngay][ca][phong.MAPHONG] = bacSi.MANHANVIEN; // Gán bác sĩ vào ca và phòng này
-                                bacSiDaDuocGan.Add(bacSi.MANHANVIEN);
-                            }
-                        }
+                            MALICH = Guid.NewGuid().ToString().Substring(0, 10),
+                            MANHANVIEN = bacSi.MANHANVIEN,
+                            NGAYLAM = ngay,
+                            PHONGLAMVIEC = phong.MAPHONG,
+                            CALAM = ca
+                        });
+
+                        // Cập nhật số phòng đã mở trong ngày
+                        soPhongDaMoTrongNgay[ngay]++;
                     }
                 }
             }
 
-            List<LICHLAMVIEC> lichLamViecList = new List<LICHLAMVIEC>();
-            int maLichCounter = 1;
+            // Lưu lịch làm việc vào cơ sở dữ liệu
+            _layDanhSach.LuuLichLamViec(lichLamViecMoi);
+        }
 
-            foreach (var ngay in lichLamViec.Keys)
-            {
-                foreach (var ca in lichLamViec[ngay].Keys)
-                {
-                    foreach (var phong in lichLamViec[ngay][ca].Keys)
-                    {
-                        string maNhanVien = lichLamViec[ngay][ca][phong];
-                        if (maNhanVien != null) // Chỉ lưu các lịch làm việc đã được gán bác sĩ
-                        {
-                            lichLamViecList.Add(new LICHLAMVIEC
-                            {
-                                MALICH = maLichCounter++.ToString(),
-                                MANHANVIEN = maNhanVien,
-                                NGAYLAM = ngay,
-                                CALAM = ca,
-                                PHONGLAMVIEC = phong
-                            });
-                        }
-                    }
-                }
-            }
-
-            dsDAL.LuuLichLamViec(lichLamViecList);
+        public void XoaLichLamViec()
+        {
+            _layDanhSach.XoaLichLamViec();
         }
     }
 }

@@ -25,5 +25,11 @@ namespace DAL
             qlbv.LICHLAMVIECs.InsertAllOnSubmit(llvList);
             qlbv.SubmitChanges();
         }
+
+        public void XoaLichLamViec()
+        {
+            qlbv.ExecuteCommand("DELETE FROM LICHLAMVIEC");
+            qlbv.SubmitChanges();
+        }
     }
 }
