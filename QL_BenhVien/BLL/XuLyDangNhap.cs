@@ -53,8 +53,7 @@ namespace BLL
 
         public void SaveConfig(string pServer, string pUser, string pPass, string pDBname)
         {
-            Properties.Settings.Default.conStr = "Data Source=" + pServer + ";Initial Catalog=" + pDBname + ";User ID=" + pUser + ";Password = " + pPass + "";
-            Properties.Settings.Default.Save();
+            userDAL.SaveConfig(pServer, pUser, pPass, pDBname);
         }
     }
 }

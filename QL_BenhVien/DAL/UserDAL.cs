@@ -45,7 +45,7 @@ namespace DAL
 
         public string GetConnectionString()
         {
-            return Properties.Settings.Default.QL_BENHVIENConnectionString;
+            return Properties.Settings.Default.conStr;
         }
 
         public DataTable GetServerName()
