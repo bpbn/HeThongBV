@@ -63,6 +63,24 @@
     <Compile Include="uc_Days.Designer.cs">
       <DependentUpon>uc_Days.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_ThongTinBenhNhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThongTinBenhNhan.Designer.cs">
+      <DependentUpon>UC_ThongTinBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ThongTinChanDoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThongTinChanDoan.Designer.cs">
+      <DependentUpon>UC_ThongTinChanDoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ThongTinKham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThongTinKham.Designer.cs">
+      <DependentUpon>UC_ThongTinKham.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="uc_Blank.resx">
@@ -73,6 +91,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc_Days.resx">
       <DependentUpon>uc_Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThongTinBenhNhan.resx">
+      <DependentUpon>UC_ThongTinBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThongTinChanDoan.resx">
+      <DependentUpon>UC_ThongTinChanDoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThongTinKham.resx">
+      <DependentUpon>UC_ThongTinKham.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

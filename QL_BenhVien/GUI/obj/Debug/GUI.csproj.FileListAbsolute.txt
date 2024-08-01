@@ -42,3 +42,4 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.CoreCompil
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.exe
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmXepLichLamViec.resources
