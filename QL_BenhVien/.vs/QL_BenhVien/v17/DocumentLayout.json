@@ -3,23 +3,55 @@
   "WorkspaceRootPath": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\bll\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|solutionrelative:bll\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\bll\\xulydangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|solutionrelative:bll\\xulydangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|solutionrelative:dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmxeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmxeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmlichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\dal\\quanlybenhvien.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|solutionrelative:dal\\quanlybenhvien.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\dal\\qlbv.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|solutionrelative:dal\\qlbv.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\gui\\frmlichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmlichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\dal\\laydanhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\dal\\laydanhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|solutionrelative:dal\\laydanhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\bll\\xeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\bll\\xeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|solutionrelative:bll\\xeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,15 +62,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.config",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\app.config",
+              "RelativeDocumentMoniker": "BLL\\app.config",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\app.config",
+              "RelativeToolTip": "BLL\\app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-01T17:15:24.778Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\App.config",
+              "RelativeDocumentMoniker": "GUI\\App.config",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\App.config",
+              "RelativeToolTip": "GUI\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-01T17:15:40.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XuLyDangNhap.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XuLyDangNhap.cs",
+              "RelativeDocumentMoniker": "BLL\\XuLyDangNhap.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XuLyDangNhap.cs",
+              "RelativeToolTip": "BLL\\XuLyDangNhap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T17:14:54.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GUI\\Program.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\Program.cs",
+              "RelativeToolTip": "GUI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T17:10:29.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDAL.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\UserDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\UserDAL.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\UserDAL.cs",
+              "RelativeToolTip": "DAL\\UserDAL.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwC8AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T17:08:22.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuanLyBenhVien.xsd",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\QuanLyBenhVien.xsd",
+              "RelativeDocumentMoniker": "DAL\\QuanLyBenhVien.xsd",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\QuanLyBenhVien.xsd",
+              "RelativeToolTip": "DAL\\QuanLyBenhVien.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-08-01T16:49:11.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QLBV.dbml",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\QLBV.dbml",
+              "RelativeDocumentMoniker": "DAL\\QLBV.dbml",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\QLBV.dbml",
+              "RelativeToolTip": "DAL\\QLBV.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2024-08-01T16:49:08.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmDangNhap.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "GUI\\frmDangNhap.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmDangNhap.cs",
+              "RelativeToolTip": "GUI\\frmDangNhap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T16:43:18.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmXepLichLamViec.cs [Design]",
               "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmXepLichLamViec.cs",
               "RelativeDocumentMoniker": "GUI\\frmXepLichLamViec.cs",
@@ -50,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "frmLichLamViec.cs [Design]",
               "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmLichLamViec.cs",
               "RelativeDocumentMoniker": "GUI\\frmLichLamViec.cs",
@@ -62,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "LayDanhSach.cs",
               "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\LayDanhSach.cs",
               "RelativeDocumentMoniker": "DAL\\LayDanhSach.cs",
@@ -75,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmMain.cs",
               "RelativeDocumentMoniker": "GUI\\frmMain.cs",
@@ -88,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "XepLichLamViec.cs",
               "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XepLichLamViec.cs",
               "RelativeDocumentMoniker": "BLL\\XepLichLamViec.cs",
