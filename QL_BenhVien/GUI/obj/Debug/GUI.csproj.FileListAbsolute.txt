@@ -20,3 +20,25 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmMain.re
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.pdb
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmLichLamViec.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.exe.config
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.exe
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\DAL.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\DAL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\DAL.dll.config
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.dll.config
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmDangNhap.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmDanhSach.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmLichLamViec.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmMain.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.exe
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.pdb

@@ -8,3 +8,13 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\Thi
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.pdb
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_Blank.resources
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_Days.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\ThietKeControl.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\ThietKeControl.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.AssemblyReference.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_Blank.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_DanhSach.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_Days.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.GenerateResource.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.CoreCompileInputs.cache
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.dll
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.pdb
