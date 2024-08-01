@@ -1,7 +1,6 @@
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.exe.config
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.exe
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.pdb
-D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\DAL.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.pdb
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.dll.config
