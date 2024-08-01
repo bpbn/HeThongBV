@@ -25,7 +25,8 @@ namespace GUI
 
         private void btnLichLamViec_Click(object sender, EventArgs e)
         {
-            
+            frmXepLichLamViec frmXepLichLamViec = new frmXepLichLamViec();
+            frmXepLichLamViec.Show();
         }
     }
 }

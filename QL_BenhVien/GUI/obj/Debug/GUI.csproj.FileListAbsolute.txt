@@ -19,6 +19,8 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmMain.re
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.pdb
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmLichLamViec.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmXepLichLamViec.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\BLL.dll
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.exe.config
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.exe
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\bin\Debug\GUI.pdb
