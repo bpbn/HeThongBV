@@ -65,11 +65,23 @@
     <Compile Include="frmDanhSach.Designer.cs">
       <DependentUpon>frmDanhSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLichLamViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLichLamViec.Designer.cs">
+      <DependentUpon>frmLichLamViec.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXepLichLamViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXepLichLamViec.Designer.cs">
+      <DependentUpon>frmXepLichLamViec.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDanhSach.resx">
       <DependentUpon>frmDanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLichLamViec.resx">
+      <DependentUpon>frmLichLamViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -152,6 +167,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-calendar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-left-arrow-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-right-arrow-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

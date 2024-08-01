@@ -26,7 +26,7 @@ namespace GUI
 
         private void frmDanhSach_Load(object sender, EventArgs e)
         {
-            dgvDanhSach.Enabled = false;
+            loadData("TOATHUOC");
         }
 
         private void btnToaThuoc_Click(object sender, EventArgs e)

@@ -20,7 +20,7 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FrmDangNhap = new frmDangNhap();
-            Application.Run(FrmDangNhap);
+            Application.Run(new frmLichLamViec());
         }
     }
 }

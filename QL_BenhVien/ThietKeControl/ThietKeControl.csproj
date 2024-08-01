@@ -45,16 +45,34 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uc_Blank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Blank.Designer.cs">
+      <DependentUpon>uc_Blank.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_DanhSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_DanhSach.Designer.cs">
       <DependentUpon>UC_DanhSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_Days.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Days.Designer.cs">
+      <DependentUpon>uc_Days.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="uc_Blank.resx">
+      <DependentUpon>uc_Blank.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_DanhSach.resx">
       <DependentUpon>UC_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Days.resx">
+      <DependentUpon>uc_Days.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

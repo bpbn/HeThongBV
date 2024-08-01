@@ -19,3 +19,4 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmDanhSac
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmMain.resources
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\ThietKeControl.pdb
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmLichLamViec.resources

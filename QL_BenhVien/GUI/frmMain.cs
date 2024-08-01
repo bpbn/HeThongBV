@@ -22,5 +22,10 @@ namespace GUI
             frmDanhSach frmDanhSach = new frmDanhSach();
             frmDanhSach.Show();
         }
+
+        private void btnLichLamViec_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

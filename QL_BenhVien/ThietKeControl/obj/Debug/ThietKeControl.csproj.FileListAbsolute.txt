@@ -6,3 +6,5 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\Thi
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.CoreCompileInputs.cache
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.pdb
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_Blank.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_Days.resources

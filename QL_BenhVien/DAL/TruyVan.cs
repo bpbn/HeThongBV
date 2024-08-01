@@ -9,8 +9,9 @@ using System.Configuration;
 
 namespace DAL
 {
-    public static class TruyVan
+    public class TruyVan
     {
+        QLBVDataContext qlbv = new QLBVDataContext();
         private static string GetConnectionString()
         {
             return Properties.Settings.Default.QL_BENHVIENConnectionString;
@@ -28,6 +29,11 @@ namespace DAL
             }
 
             return dataTable;
+        }
+
+        public List<TOATHUOC> loadToaThuoc()
+        {
+            return qlbv.TOATHUOCs.Select(tt => tt).ToList<TOATHUOC>();
         }
 
     }

@@ -133,7 +133,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmDangNhap";
-            this.Text = "frmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng Nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
