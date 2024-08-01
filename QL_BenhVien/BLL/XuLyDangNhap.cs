@@ -14,15 +14,15 @@ namespace BLL
     {
         private UserDAL userDAL = new UserDAL();
         public XuLyDangNhap() { }
-
+        
         public int Check_Config()
         {
-            return userDAL.Check_Config(Properties.Settings.Default.conStr);
+            return userDAL.Check_Config(userDAL.GetConnectionString());
         }
 
         public LoginResult Check_User(string pUser, string pPass)
         {
-            SqlDataAdapter daUser = new SqlDataAdapter("select * from TAIKHOAN where TENTAIKHOAN = '" + pUser + "' and MATKHAU = N'" + pPass + "'", Properties.Settings.Default.conStr);
+            SqlDataAdapter daUser = new SqlDataAdapter("select * from TAIKHOAN where TENTAIKHOAN = '" + pUser + "' and MATKHAU = N'" + pPass + "'", userDAL.GetConnectionString());
             DataTable dt = new DataTable();
             daUser.Fill(dt);
             if (dt.Rows.Count == 0)

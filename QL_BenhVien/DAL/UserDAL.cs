@@ -43,6 +43,11 @@ namespace DAL
             }
         }
 
+        public string GetConnectionString()
+        {
+            return Properties.Settings.Default.QL_BENHVIENConnectionString;
+        }
+
         public DataTable GetServerName()
         {
             DataTable dt = new DataTable();
