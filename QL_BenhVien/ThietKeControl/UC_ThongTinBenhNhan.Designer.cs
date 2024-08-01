@@ -30,34 +30,34 @@ namespace ThietKeControl
         private void InitializeComponent()
         {
             this.grbTTBN = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTenBN = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaBN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grbTTBN.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbTTBN
             // 
-            this.grbTTBN.Controls.Add(this.textBox6);
+            this.grbTTBN.Controls.Add(this.txtDiaChi);
             this.grbTTBN.Controls.Add(this.label6);
-            this.grbTTBN.Controls.Add(this.textBox5);
+            this.grbTTBN.Controls.Add(this.txtGioiTinh);
             this.grbTTBN.Controls.Add(this.label5);
-            this.grbTTBN.Controls.Add(this.textBox4);
+            this.grbTTBN.Controls.Add(this.txtSDT);
             this.grbTTBN.Controls.Add(this.label4);
-            this.grbTTBN.Controls.Add(this.textBox3);
+            this.grbTTBN.Controls.Add(this.txtNgaySinh);
             this.grbTTBN.Controls.Add(this.label3);
-            this.grbTTBN.Controls.Add(this.textBox2);
+            this.grbTTBN.Controls.Add(this.txtTenBN);
             this.grbTTBN.Controls.Add(this.label2);
-            this.grbTTBN.Controls.Add(this.textBox1);
+            this.grbTTBN.Controls.Add(this.txtMaBN);
             this.grbTTBN.Controls.Add(this.label1);
             this.grbTTBN.Location = new System.Drawing.Point(4, 3);
             this.grbTTBN.Name = "grbTTBN";
@@ -66,12 +66,12 @@ namespace ThietKeControl
             this.grbTTBN.TabStop = false;
             this.grbTTBN.Text = "Thông tin bệnh nhân";
             // 
-            // textBox6
+            // txtDiaChi
             // 
-            this.textBox6.Location = new System.Drawing.Point(161, 115);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(752, 26);
-            this.textBox6.TabIndex = 23;
+            this.txtDiaChi.Location = new System.Drawing.Point(161, 115);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(752, 26);
+            this.txtDiaChi.TabIndex = 23;
             // 
             // label6
             // 
@@ -82,12 +82,12 @@ namespace ThietKeControl
             this.label6.TabIndex = 22;
             this.label6.Text = "Địa chỉ";
             // 
-            // textBox5
+            // txtGioiTinh
             // 
-            this.textBox5.Location = new System.Drawing.Point(811, 70);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(102, 26);
-            this.textBox5.TabIndex = 21;
+            this.txtGioiTinh.Location = new System.Drawing.Point(811, 70);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.Size = new System.Drawing.Size(102, 26);
+            this.txtGioiTinh.TabIndex = 21;
             // 
             // label5
             // 
@@ -98,12 +98,12 @@ namespace ThietKeControl
             this.label5.TabIndex = 20;
             this.label5.Text = "SDT";
             // 
-            // textBox4
+            // txtSDT
             // 
-            this.textBox4.Location = new System.Drawing.Point(419, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(235, 26);
-            this.textBox4.TabIndex = 19;
+            this.txtSDT.Location = new System.Drawing.Point(419, 71);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(235, 26);
+            this.txtSDT.TabIndex = 19;
             // 
             // label4
             // 
@@ -114,12 +114,12 @@ namespace ThietKeControl
             this.label4.TabIndex = 18;
             this.label4.Text = "Giới tính";
             // 
-            // textBox3
+            // txtNgaySinh
             // 
-            this.textBox3.Location = new System.Drawing.Point(161, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(145, 26);
-            this.textBox3.TabIndex = 17;
+            this.txtNgaySinh.Location = new System.Drawing.Point(161, 70);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(145, 26);
+            this.txtNgaySinh.TabIndex = 17;
             // 
             // label3
             // 
@@ -130,12 +130,12 @@ namespace ThietKeControl
             this.label3.TabIndex = 16;
             this.label3.Text = "Ngày sinh";
             // 
-            // textBox2
+            // txtTenBN
             // 
-            this.textBox2.Location = new System.Drawing.Point(590, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(323, 26);
-            this.textBox2.TabIndex = 15;
+            this.txtTenBN.Location = new System.Drawing.Point(590, 23);
+            this.txtTenBN.Name = "txtTenBN";
+            this.txtTenBN.Size = new System.Drawing.Size(323, 26);
+            this.txtTenBN.TabIndex = 15;
             // 
             // label2
             // 
@@ -146,12 +146,12 @@ namespace ThietKeControl
             this.label2.TabIndex = 14;
             this.label2.Text = "Tên bệnh nhân";
             // 
-            // textBox1
+            // txtMaBN
             // 
-            this.textBox1.Location = new System.Drawing.Point(161, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 26);
-            this.textBox1.TabIndex = 13;
+            this.txtMaBN.Location = new System.Drawing.Point(161, 26);
+            this.txtMaBN.Name = "txtMaBN";
+            this.txtMaBN.Size = new System.Drawing.Size(145, 26);
+            this.txtMaBN.TabIndex = 13;
             // 
             // label1
             // 
@@ -180,17 +180,17 @@ namespace ThietKeControl
         #endregion
 
         private System.Windows.Forms.GroupBox grbTTBN;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtGioiTinh;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNgaySinh;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTenBN;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.Label label1;
     }
 }

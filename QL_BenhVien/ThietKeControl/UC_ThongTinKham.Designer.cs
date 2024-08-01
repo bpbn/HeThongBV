@@ -30,13 +30,13 @@ namespace ThietKeControl
         private void InitializeComponent()
         {
             this.grbTTK = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMaPhong = new System.Windows.Forms.TextBox();
+            this.txtMaPK = new System.Windows.Forms.TextBox();
+            this.txtTenBS = new System.Windows.Forms.TextBox();
+            this.txtNgayLap = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rtxtLoiDan = new System.Windows.Forms.RichTextBox();
+            this.txtLoiDan = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,13 +45,13 @@ namespace ThietKeControl
             // 
             // grbTTK
             // 
-            this.grbTTK.Controls.Add(this.textBox1);
-            this.grbTTK.Controls.Add(this.textBox2);
-            this.grbTTK.Controls.Add(this.textBox5);
-            this.grbTTK.Controls.Add(this.textBox3);
+            this.grbTTK.Controls.Add(this.txtMaPhong);
+            this.grbTTK.Controls.Add(this.txtMaPK);
+            this.grbTTK.Controls.Add(this.txtTenBS);
+            this.grbTTK.Controls.Add(this.txtNgayLap);
             this.grbTTK.Controls.Add(this.label3);
             this.grbTTK.Controls.Add(this.label4);
-            this.grbTTK.Controls.Add(this.rtxtLoiDan);
+            this.grbTTK.Controls.Add(this.txtLoiDan);
             this.grbTTK.Controls.Add(this.label6);
             this.grbTTK.Controls.Add(this.label2);
             this.grbTTK.Controls.Add(this.label1);
@@ -62,33 +62,33 @@ namespace ThietKeControl
             this.grbTTK.TabStop = false;
             this.grbTTK.Text = "Thông tin khám";
             // 
-            // textBox1
+            // txtMaPhong
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 26);
-            this.textBox1.TabIndex = 41;
+            this.txtMaPhong.Location = new System.Drawing.Point(165, 75);
+            this.txtMaPhong.Name = "txtMaPhong";
+            this.txtMaPhong.Size = new System.Drawing.Size(256, 26);
+            this.txtMaPhong.TabIndex = 41;
             // 
-            // textBox2
+            // txtMaPK
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 26);
-            this.textBox2.TabIndex = 40;
+            this.txtMaPK.Location = new System.Drawing.Point(165, 30);
+            this.txtMaPK.Name = "txtMaPK";
+            this.txtMaPK.Size = new System.Drawing.Size(256, 26);
+            this.txtMaPK.TabIndex = 40;
             // 
-            // textBox5
+            // txtTenBS
             // 
-            this.textBox5.Location = new System.Drawing.Point(661, 30);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(256, 26);
-            this.textBox5.TabIndex = 39;
+            this.txtTenBS.Location = new System.Drawing.Point(661, 30);
+            this.txtTenBS.Name = "txtTenBS";
+            this.txtTenBS.Size = new System.Drawing.Size(256, 26);
+            this.txtTenBS.TabIndex = 39;
             // 
-            // textBox3
+            // txtNgayLap
             // 
-            this.textBox3.Location = new System.Drawing.Point(661, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 26);
-            this.textBox3.TabIndex = 38;
+            this.txtNgayLap.Location = new System.Drawing.Point(661, 75);
+            this.txtNgayLap.Name = "txtNgayLap";
+            this.txtNgayLap.Size = new System.Drawing.Size(256, 26);
+            this.txtNgayLap.TabIndex = 38;
             // 
             // label3
             // 
@@ -108,13 +108,13 @@ namespace ThietKeControl
             this.label4.TabIndex = 36;
             this.label4.Text = "Phòng khám";
             // 
-            // rtxtLoiDan
+            // txtLoiDan
             // 
-            this.rtxtLoiDan.Location = new System.Drawing.Point(165, 116);
-            this.rtxtLoiDan.Name = "rtxtLoiDan";
-            this.rtxtLoiDan.Size = new System.Drawing.Size(752, 78);
-            this.rtxtLoiDan.TabIndex = 35;
-            this.rtxtLoiDan.Text = "";
+            this.txtLoiDan.Location = new System.Drawing.Point(165, 116);
+            this.txtLoiDan.Name = "txtLoiDan";
+            this.txtLoiDan.Size = new System.Drawing.Size(752, 78);
+            this.txtLoiDan.TabIndex = 35;
+            this.txtLoiDan.Text = "";
             // 
             // label6
             // 
@@ -161,13 +161,13 @@ namespace ThietKeControl
         #endregion
 
         private System.Windows.Forms.GroupBox grbTTK;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMaPhong;
+        private System.Windows.Forms.TextBox txtMaPK;
+        private System.Windows.Forms.TextBox txtTenBS;
+        private System.Windows.Forms.TextBox txtNgayLap;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox rtxtLoiDan;
+        private System.Windows.Forms.RichTextBox txtLoiDan;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

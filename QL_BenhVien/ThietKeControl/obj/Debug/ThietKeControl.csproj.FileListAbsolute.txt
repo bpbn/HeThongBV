@@ -20,3 +20,4 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeCon
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinBenhNhan.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinChanDoan.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinKham.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.AssemblyReference.cache
