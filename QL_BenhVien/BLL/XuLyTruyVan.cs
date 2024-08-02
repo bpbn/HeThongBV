@@ -45,5 +45,15 @@ namespace BLL
                 .ToList();
         }
 
+        public PHIEUKHAM LayThongTinPhieuKham(string maPhieuKham)
+        {
+            return dal.LoadPhieuKham(maPhieuKham);
+        }
+
+        public BENHNHAN LayThongTinBenhNhan(string maBenhNhan)
+        {
+            return dal.LoadBenhNhan(maBenhNhan);
+        }
+
     }
 }

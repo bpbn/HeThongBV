@@ -45,5 +45,15 @@ namespace DAL
         {
             return qlbv.BENHs.Select(b => b).ToList<BENH>();
         }
+
+        public PHIEUKHAM LoadPhieuKham(string maPhieuKham)
+        {
+            return qlbv.PHIEUKHAMs.FirstOrDefault(pk => pk.MAPHIEUKHAM == maPhieuKham);
+        }
+
+        public BENHNHAN LoadBenhNhan(string maBenhNhan)
+        {
+            return qlbv.BENHNHANs.FirstOrDefault(bn => bn.MABENHNHAN == maBenhNhan);
+        }
     }
 }

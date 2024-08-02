@@ -72,6 +72,7 @@ namespace ThietKeControl
             this.txtMaPK.Name = "txtMaPK";
             this.txtMaPK.Size = new System.Drawing.Size(256, 26);
             this.txtMaPK.TabIndex = 40;
+            this.txtMaPK.TextChanged += new System.EventHandler(this.txtMaPK_TextChanged);
             // 
             // txtTenBS
             // 
