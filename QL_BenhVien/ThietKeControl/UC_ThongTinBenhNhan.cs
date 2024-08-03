@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL; 
 
 namespace ThietKeControl
 {
@@ -16,5 +10,29 @@ namespace ThietKeControl
         {
             InitializeComponent();
         }
+
+        public void SetBenhNhan(DAL.BENHNHAN benhNhan)
+        {
+            if (benhNhan != null)
+            {
+                txtMaBN.Text = benhNhan.MABENHNHAN;
+                txtTenBN.Text = benhNhan.TENBENHNHAN;
+
+                if (benhNhan.NGAYSINH != null)
+                {
+                    DateTime ngaySinh = (DateTime)benhNhan.NGAYSINH;
+                    txtNgaySinh.Text = ngaySinh.ToString("yyyy-MM-dd");
+                }
+                else
+                {
+                    txtNgaySinh.Text = string.Empty;
+                }
+
+                txtGioiTinh.Text = benhNhan.GIOITINH;
+                txtSDT.Text = benhNhan.SDT;
+                txtDiaChi.Text = benhNhan.DIACHI;
+            }
+        }
+
     }
 }

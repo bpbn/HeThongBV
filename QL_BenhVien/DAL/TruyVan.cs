@@ -36,5 +36,24 @@ namespace DAL
             return qlbv.TOATHUOCs.Select(tt => tt).ToList<TOATHUOC>();
         }
 
+        public List<THUOC> loadThuoc()
+        {
+            return qlbv.THUOCs.Select(t => t).ToList<THUOC>();
+        }
+
+        public List<BENH> loadBenh()
+        {
+            return qlbv.BENHs.Select(b => b).ToList<BENH>();
+        }
+
+        public PHIEUKHAM LoadPhieuKham(string maPhieuKham)
+        {
+            return qlbv.PHIEUKHAMs.FirstOrDefault(pk => pk.MAPHIEUKHAM == maPhieuKham);
+        }
+
+        public BENHNHAN LoadBenhNhan(string maBenhNhan)
+        {
+            return qlbv.BENHNHANs.FirstOrDefault(bn => bn.MABENHNHAN == maBenhNhan);
+        }
     }
 }
