@@ -55,5 +55,29 @@ namespace BLL
             return dal.LoadBenhNhan(maBenhNhan);
         }
 
+        public List<string> dsBacSiLamViec()
+        {
+            var tenBS = dal.loadLichLamViec()
+                .Select(llv => llv.MANHANVIEN)
+                .Distinct()
+                .Join(dal.loadNhanVien(), manv => manv, nv => nv.MANHANVIEN, (manv, nv) => nv.TENNHANVIEN).ToList();
+            return tenBS;
+        }
+        public string LayTenPhongLamViec(string maNhanVien)
+        {
+            return dal.LayTenPhongLamViec(maNhanVien);
+        }
+        public List<NHANVIEN> dsBacSi()
+        {
+            return dal.loadBacSi();
+        }
+        public List<BENHNHAN> TimKiemBenhNhan(string benhNhan)
+        {
+            var danhSachBenhNhan = dal.loadDSBenhNhan();
+            return danhSachBenhNhan
+                .Where(bn => bn.TENBENHNHAN.Contains(benhNhan) ||
+                             bn.SDT.Contains(benhNhan))
+                .ToList();
+        }
     }
 }

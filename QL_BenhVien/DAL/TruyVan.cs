@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Runtime.Remoting.Contexts;
 
 namespace DAL
 {
@@ -54,6 +55,36 @@ namespace DAL
         public BENHNHAN LoadBenhNhan(string maBenhNhan)
         {
             return qlbv.BENHNHANs.FirstOrDefault(bn => bn.MABENHNHAN == maBenhNhan);
+        }
+
+        public List<BENHNHAN> loadDSBenhNhan()
+        {
+            return qlbv.BENHNHANs.Select(bn => bn).ToList<BENHNHAN>();
+        }
+        public List<NHANVIEN> loadNhanVien()
+        {
+            return qlbv.NHANVIENs.Select(nv => nv).ToList<NHANVIEN>();
+        }
+        public List<NHANVIEN> loadBacSi()
+        {
+            var danhSachBacSi = loadNhanVien()
+                .Where(nv => nv.CHUCVU.Equals("Bác sĩ", StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            return danhSachBacSi;
+        }
+        public List<LICHLAMVIEC> loadLichLamViec()
+        {
+            return qlbv.LICHLAMVIECs.Select(llv => llv).ToList<LICHLAMVIEC>();
+        }
+        public string LayTenPhongLamViec(string maNhanVien)
+        {
+            var phongLamViec = qlbv.LICHLAMVIECs
+                .Where(llv => llv.MANHANVIEN == maNhanVien)
+                .Select(llv => llv.PHONGLAMVIEC)
+                .FirstOrDefault();
+
+            return phongLamViec;
         }
     }
 }

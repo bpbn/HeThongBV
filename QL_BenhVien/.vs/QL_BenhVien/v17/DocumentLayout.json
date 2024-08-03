@@ -3,34 +3,28 @@
   "WorkspaceRootPath": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\bll\\xeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|solutionrelative:bll\\xeplichlamviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmphieukham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmphieukham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F8EBD79-4395-4C42-931F-472D222F4800}|ThietKeControl\\ThietKeControl.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\thietkecontrol\\uc_danhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8EBD79-4395-4C42-931F-472D222F4800}|ThietKeControl\\ThietKeControl.csproj|solutionrelative:thietkecontrol\\uc_danhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmchandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmchandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmphieukham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmphieukham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|BLL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{4F8EBD79-4395-4C42-931F-472D222F4800}|ThietKeControl\\ThietKeControl.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\thietkecontrol\\uc_danhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F8EBD79-4395-4C42-931F-472D222F4800}|ThietKeControl\\ThietKeControl.csproj|solutionrelative:thietkecontrol\\uc_danhsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|DAL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\bll\\xulytruyvan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|solutionrelative:bll\\xulytruyvan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{72E78700-7CB3-4127-98F8-18FD3BD922B1}|GUI\\GUI.csproj|solutionrelative:gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\dal\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|solutionrelative:dal\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\bll\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{AA83CAB5-C893-4E68-949D-6555EA37E9AD}|BLL\\BLL.csproj|solutionrelative:bll\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+      "AbsoluteMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|d:\\study\\project group\\ptpmtm\\hethongbv\\ql_benhvien\\dal\\truyvan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C910D348-1245-4439-9BF0-68AC4680EDAC}|DAL\\DAL.csproj|solutionrelative:dal\\truyvan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,77 +42,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "XepLichLamViec.cs",
-              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XepLichLamViec.cs",
-              "RelativeDocumentMoniker": "BLL\\XepLichLamViec.cs",
-              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XepLichLamViec.cs",
-              "RelativeToolTip": "BLL\\XepLichLamViec.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAmwDQAAAAZAAAA",
+              "DocumentIndex": 3,
+              "Title": "UC_DanhSach.cs [Design]",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\ThietKeControl\\UC_DanhSach.cs",
+              "RelativeDocumentMoniker": "ThietKeControl\\UC_DanhSach.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\ThietKeControl\\UC_DanhSach.cs [Design]",
+              "RelativeToolTip": "ThietKeControl\\UC_DanhSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:54:58.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmChanDoan.cs [Design]",
-              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\FrmChanDoan.cs",
-              "RelativeDocumentMoniker": "GUI\\FrmChanDoan.cs",
-              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\FrmChanDoan.cs [Design]",
-              "RelativeToolTip": "GUI\\FrmChanDoan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:50:10.859Z",
+              "WhenOpened": "2024-08-03T22:23:17.699Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\Program.cs",
-              "RelativeDocumentMoniker": "GUI\\Program.cs",
-              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\Program.cs",
-              "RelativeToolTip": "GUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBYAAAAxAAAA",
+              "Title": "UC_DanhSach.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\ThietKeControl\\UC_DanhSach.cs",
+              "RelativeDocumentMoniker": "ThietKeControl\\UC_DanhSach.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\ThietKeControl\\UC_DanhSach.cs",
+              "RelativeToolTip": "ThietKeControl\\UC_DanhSach.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwCQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:48:36.126Z",
+              "WhenOpened": "2024-08-03T22:00:38.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BLL",
-              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\BLL.csproj",
-              "RelativeDocumentMoniker": "BLL\\BLL.csproj",
-              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\BLL.csproj",
-              "RelativeToolTip": "BLL\\BLL.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-03T10:47:22.304Z",
+              "DocumentIndex": 2,
+              "Title": "frmPhieuKham.cs [Design]",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmPhieuKham.cs",
+              "RelativeDocumentMoniker": "GUI\\frmPhieuKham.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmPhieuKham.cs [Design]",
+              "RelativeToolTip": "GUI\\frmPhieuKham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T19:38:50.826Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPhieuKham.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmPhieuKham.cs",
+              "RelativeDocumentMoniker": "GUI\\frmPhieuKham.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmPhieuKham.cs",
+              "RelativeToolTip": "GUI\\frmPhieuKham.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAjwFIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T19:21:09.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DAL",
-              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\DAL.csproj",
-              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
-              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\DAL.csproj",
-              "RelativeToolTip": "DAL\\DAL.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-03T10:47:02.715Z",
+              "Title": "XuLyTruyVan.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XuLyTruyVan.cs",
+              "RelativeDocumentMoniker": "BLL\\XuLyTruyVan.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\BLL\\XuLyTruyVan.cs",
+              "RelativeToolTip": "BLL\\XuLyTruyVan.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwEQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T19:15:30.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmDangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmDangNhap.cs",
-              "RelativeDocumentMoniker": "GUI\\frmDangNhap.cs",
-              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\GUI\\frmDangNhap.cs [Design]",
-              "RelativeToolTip": "GUI\\frmDangNhap.cs [Design]",
+              "Title": "TruyVan.cs",
+              "DocumentMoniker": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\TruyVan.cs",
+              "RelativeDocumentMoniker": "DAL\\TruyVan.cs",
+              "ToolTip": "D:\\STUDY\\Project Group\\PTPMTM\\HeThongBV\\QL_BenhVien\\DAL\\TruyVan.cs",
+              "RelativeToolTip": "DAL\\TruyVan.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAwwDsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:42:38.8Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-03T19:13:59.188Z",
+              "EditorCaption": ""
             }
           ]
         }
