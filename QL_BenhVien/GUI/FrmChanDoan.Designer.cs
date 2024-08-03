@@ -38,9 +38,10 @@ namespace GUI
             // btnKetThuc
             // 
             this.btnKetThuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetThuc.Location = new System.Drawing.Point(820, 756);
+            this.btnKetThuc.Location = new System.Drawing.Point(1093, 930);
+            this.btnKetThuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKetThuc.Name = "btnKetThuc";
-            this.btnKetThuc.Size = new System.Drawing.Size(116, 41);
+            this.btnKetThuc.Size = new System.Drawing.Size(155, 50);
             this.btnKetThuc.TabIndex = 3;
             this.btnKetThuc.Text = "Kết thúc";
             this.btnKetThuc.UseVisualStyleBackColor = true;
@@ -48,40 +49,42 @@ namespace GUI
             // uC_ThongTinChanDoan1
             // 
             this.uC_ThongTinChanDoan1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_ThongTinChanDoan1.Location = new System.Drawing.Point(16, 378);
-            this.uC_ThongTinChanDoan1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_ThongTinChanDoan1.Location = new System.Drawing.Point(21, 465);
+            this.uC_ThongTinChanDoan1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_ThongTinChanDoan1.Name = "uC_ThongTinChanDoan1";
-            this.uC_ThongTinChanDoan1.Size = new System.Drawing.Size(950, 400);
+            this.uC_ThongTinChanDoan1.Size = new System.Drawing.Size(1267, 492);
             this.uC_ThongTinChanDoan1.TabIndex = 2;
             // 
             // uC_ThongTinKham1
             // 
             this.uC_ThongTinKham1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_ThongTinKham1.Location = new System.Drawing.Point(16, 170);
-            this.uC_ThongTinKham1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_ThongTinKham1.Location = new System.Drawing.Point(21, 209);
+            this.uC_ThongTinKham1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_ThongTinKham1.Name = "uC_ThongTinKham1";
-            this.uC_ThongTinKham1.Size = new System.Drawing.Size(950, 220);
+            this.uC_ThongTinKham1.Size = new System.Drawing.Size(1267, 271);
             this.uC_ThongTinKham1.TabIndex = 1;
             // 
             // uC_ThongTinBenhNhan1
             // 
             this.uC_ThongTinBenhNhan1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_ThongTinBenhNhan1.Location = new System.Drawing.Point(16, 13);
-            this.uC_ThongTinBenhNhan1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_ThongTinBenhNhan1.Location = new System.Drawing.Point(21, 16);
+            this.uC_ThongTinBenhNhan1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.uC_ThongTinBenhNhan1.Name = "uC_ThongTinBenhNhan1";
-            this.uC_ThongTinBenhNhan1.Size = new System.Drawing.Size(950, 160);
+            this.uC_ThongTinBenhNhan1.Size = new System.Drawing.Size(1267, 197);
             this.uC_ThongTinBenhNhan1.TabIndex = 0;
             // 
             // FrmChanDoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 811);
+            this.ClientSize = new System.Drawing.Size(1312, 998);
             this.Controls.Add(this.btnKetThuc);
             this.Controls.Add(this.uC_ThongTinChanDoan1);
             this.Controls.Add(this.uC_ThongTinKham1);
             this.Controls.Add(this.uC_ThongTinBenhNhan1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmChanDoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmChanDoan";
             this.ResumeLayout(false);
 

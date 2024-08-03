@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="conStr" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=BPBN\SQLEXPRESS;Initial Catalog=QL_BENHVIEN;Persist Security Info=True;User ID=sa;Password=123</Value>
+      <Value Profile="(Default)">Data Source=DESKTOP-QVIL76U;Initial Catalog=QL_BENHVIEN;User ID=sa;Password=123;</Value>
     </Setting>
   </Settings>
 </SettingsFile>
