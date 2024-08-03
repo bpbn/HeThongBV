@@ -30,17 +30,20 @@ namespace ThietKeControl
         private void InitializeComponent()
         {
             this.grbTTKham = new System.Windows.Forms.GroupBox();
+            this.btnThemThuoc = new System.Windows.Forms.Button();
             this.txtLoiDan = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvCTTT = new System.Windows.Forms.DataGridView();
+            this.TENTHUOC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOLUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GHICHU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cboThuoc = new System.Windows.Forms.ComboBox();
             this.cboBenh = new System.Windows.Forms.ComboBox();
             this.txtTrieuChung = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThemThuoc = new System.Windows.Forms.Button();
             this.grbTTKham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTTT)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +67,15 @@ namespace ThietKeControl
             this.grbTTKham.TabIndex = 0;
             this.grbTTKham.TabStop = false;
             this.grbTTKham.Text = "Thông tin chẩn đoán";
+            // 
+            // btnThemThuoc
+            // 
+            this.btnThemThuoc.Location = new System.Drawing.Point(826, 125);
+            this.btnThemThuoc.Name = "btnThemThuoc";
+            this.btnThemThuoc.Size = new System.Drawing.Size(87, 28);
+            this.btnThemThuoc.TabIndex = 38;
+            this.btnThemThuoc.Text = "Thêm";
+            this.btnThemThuoc.UseVisualStyleBackColor = true;
             // 
             // txtLoiDan
             // 
@@ -93,12 +105,35 @@ namespace ThietKeControl
             // 
             // dgvCTTT
             // 
+            this.dgvCTTT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCTTT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCTTT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TENTHUOC,
+            this.SOLUONG,
+            this.GHICHU});
             this.dgvCTTT.Location = new System.Drawing.Point(161, 173);
             this.dgvCTTT.Name = "dgvCTTT";
             this.dgvCTTT.RowHeadersWidth = 51;
             this.dgvCTTT.Size = new System.Drawing.Size(752, 134);
             this.dgvCTTT.TabIndex = 6;
+            // 
+            // TENTHUOC
+            // 
+            this.TENTHUOC.HeaderText = "Tên thuốc";
+            this.TENTHUOC.MinimumWidth = 6;
+            this.TENTHUOC.Name = "TENTHUOC";
+            // 
+            // SOLUONG
+            // 
+            this.SOLUONG.HeaderText = "Số lượng";
+            this.SOLUONG.MinimumWidth = 6;
+            this.SOLUONG.Name = "SOLUONG";
+            // 
+            // GHICHU
+            // 
+            this.GHICHU.HeaderText = "Ghi chú";
+            this.GHICHU.MinimumWidth = 6;
+            this.GHICHU.Name = "GHICHU";
             // 
             // cboThuoc
             // 
@@ -151,15 +186,6 @@ namespace ThietKeControl
             this.label1.TabIndex = 0;
             this.label1.Text = "Triệu chứng";
             // 
-            // btnThemThuoc
-            // 
-            this.btnThemThuoc.Location = new System.Drawing.Point(826, 125);
-            this.btnThemThuoc.Name = "btnThemThuoc";
-            this.btnThemThuoc.Size = new System.Drawing.Size(87, 28);
-            this.btnThemThuoc.TabIndex = 38;
-            this.btnThemThuoc.Text = "Thêm";
-            this.btnThemThuoc.UseVisualStyleBackColor = true;
-            // 
             // UC_ThongTinChanDoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -190,5 +216,8 @@ namespace ThietKeControl
         private System.Windows.Forms.RichTextBox txtLoiDan;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnThemThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENTHUOC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GHICHU;
     }
 }
