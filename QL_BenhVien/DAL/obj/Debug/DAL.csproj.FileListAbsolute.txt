@@ -11,3 +11,4 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\bin\Debug\DAL.pdb
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.dll
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.pdb
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
