@@ -44,4 +44,6 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.csproj.CopyComple
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.exe
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.pdb
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmXepLichLamViec.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.FrmChanDoan.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmPhieuKham.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.FrmChanDoan.resources

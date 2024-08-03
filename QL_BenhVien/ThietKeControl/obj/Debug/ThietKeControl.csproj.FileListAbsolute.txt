@@ -21,6 +21,9 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeCon
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinChanDoan.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinKham.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.csproj.AssemblyReference.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinBenhNhan.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinChanDoan.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.UC_ThongTinKham.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\BLL.dll
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\DAL.dll
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\BLL.pdb

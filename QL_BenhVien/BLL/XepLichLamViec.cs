@@ -24,44 +24,31 @@ namespace BLL
             List<DateTime> danhSachNgay = new List<DateTime>();
             for (DateTime date = startDate; date <= endDate; date = date.AddDays(1))
             {
-                // Bỏ qua thứ 7 và chủ nhật
                 if (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
                     continue;
 
                 danhSachNgay.Add(date);
             }
 
-            // Xếp lịch cho từng bác sĩ
             foreach (var ca in new[] { "Sáng", "Chiều" })
             {
-                // Khởi tạo cấu trúc dữ liệu để theo dõi số phòng đã mở trong từng ngày
                 var soPhongDaMoTrongNgay = new Dictionary<DateTime, int>();
 
                 foreach (var ngay in danhSachNgay)
                 {
-                    // Khởi tạo số lượng phòng đã mở trong ngày
                     soPhongDaMoTrongNgay[ngay] = 0;
 
-                    foreach (var bacSi in danhSachBacSi)
+                    foreach (var phong in danhSachPhong)
                     {
-                        // Đảm bảo không phân công quá 3 ca cho bác sĩ
-                        if (lichLamViecMoi.Count(llv => llv.MANHANVIEN == bacSi.MANHANVIEN) >= 3)
-                            continue;
-
-                        // Lấy danh sách phòng còn trống trong ngày hiện tại
-                        var phongConTrong = danhSachPhong
-                            .Where(p => !lichLamViecMoi
-                                .Any(llv => llv.NGAYLAM == ngay && llv.CALAM == ca && llv.PHONGLAMVIEC == p.MAPHONG))
+                        var bacSiCoThePhanCong = danhSachBacSi
+                            .Where(b => lichLamViecMoi.Count(llv => llv.MANHANVIEN == b.MANHANVIEN) < 3)
                             .ToList();
 
-                        // Nếu không còn phòng trống hoặc đã mở đủ 10 phòng, bỏ qua ca này
-                        if (!phongConTrong.Any() || soPhongDaMoTrongNgay[ngay] >= 10)
+                        if (!bacSiCoThePhanCong.Any() || soPhongDaMoTrongNgay[ngay] >= 10)
                             continue;
 
-                        // Chọn phòng ngẫu nhiên từ danh sách phòng còn trống
-                        var phong = phongConTrong[random.Next(phongConTrong.Count)];
+                        var bacSi = bacSiCoThePhanCong[random.Next(bacSiCoThePhanCong.Count)];
 
-                        // Tạo bản ghi lịch làm việc mới
                         lichLamViecMoi.Add(new LICHLAMVIEC
                         {
                             MALICH = Guid.NewGuid().ToString().Substring(0, 10),
@@ -71,13 +58,11 @@ namespace BLL
                             CALAM = ca
                         });
 
-                        // Cập nhật số phòng đã mở trong ngày
                         soPhongDaMoTrongNgay[ngay]++;
                     }
                 }
             }
 
-            // Lưu lịch làm việc vào cơ sở dữ liệu
             _layDanhSach.LuuLichLamViec(lichLamViecMoi);
         }
 
