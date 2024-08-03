@@ -30,6 +30,7 @@ namespace ThietKeControl
                 {
                     txtMaPhong.Text = phieuKham.MAPHONG;
                     txtNgayLap.Text = DateTime.Now.ToString("yyyy-MM-dd");
+                    
 
                     var benhNhan = bll.LayThongTinBenhNhan(phieuKham.MABENHNHAN);
                     if (benhNhan != null)
