@@ -35,5 +35,6 @@ namespace GUI
             
             Controls.Add(ucThongTinBenhNhan);
         }
+
     }
 }

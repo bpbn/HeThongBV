@@ -35,19 +35,21 @@ namespace GUI
             // btnKetThuc
             // 
             this.btnKetThuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetThuc.Location = new System.Drawing.Point(824, 715);
+            this.btnKetThuc.Location = new System.Drawing.Point(825, 726);
+            this.btnKetThuc.Margin = new System.Windows.Forms.Padding(2);
             this.btnKetThuc.Name = "btnKetThuc";
-            this.btnKetThuc.Size = new System.Drawing.Size(109, 37);
+            this.btnKetThuc.Size = new System.Drawing.Size(107, 35);
             this.btnKetThuc.TabIndex = 0;
             this.btnKetThuc.Text = "Kết thúc";
             this.btnKetThuc.UseVisualStyleBackColor = true;
             // 
             // FrmChanDoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 768);
+            this.ClientSize = new System.Drawing.Size(970, 786);
             this.Controls.Add(this.btnKetThuc);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmChanDoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmChanDoan";

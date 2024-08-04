@@ -47,3 +47,4 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmXepLichLamViec
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.FrmChanDoan.resources
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmPhieuKham.resources
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.FrmChanDoan.resources
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmPhieuKham.resources

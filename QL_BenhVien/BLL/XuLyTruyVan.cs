@@ -17,32 +17,14 @@ namespace BLL
 
         private TruyVan dal = new TruyVan();
 
-        public List<BENH> TimKiemBenh(string tuKhoa)
+        public List<THUOC> dsThuoc()
         {
-            if (string.IsNullOrEmpty(tuKhoa))
-            {
-                return dal.loadBenh();
-            }
-
-            var danhSachBenh = dal.loadBenh();
-
-            return danhSachBenh
-                .Where(b => b.TENBENH != null && b.TENBENH.Contains(tuKhoa))
-                .ToList();
+            return dal.loadThuoc();
         }
 
-        public List<THUOC> TimKiemThuoc(string tuKhoa)
+        public List<BENH> dsBenh()
         {
-            if (string.IsNullOrEmpty(tuKhoa))
-            {
-                return dal.loadThuoc();
-            }
-
-            var danhSachThuoc = dal.loadThuoc();
-
-            return danhSachThuoc
-                .Where(b => b.TENTHUOC != null && b.TENTHUOC.Contains(tuKhoa))
-                .ToList();
+            return dal.loadBenh();
         }
 
         public PHIEUKHAM LayThongTinPhieuKham(string maPhieuKham)
@@ -63,6 +45,8 @@ namespace BLL
                 .Join(dal.loadNhanVien(), manv => manv, nv => nv.MANHANVIEN, (manv, nv) => nv.TENNHANVIEN).ToList();
             return tenBS;
         }
+
+
         public string LayTenPhongLamViec(string maNhanVien)
         {
             return dal.LayTenPhongLamViec(maNhanVien);
@@ -71,6 +55,7 @@ namespace BLL
         {
             return dal.loadBacSi();
         }
+
         public List<BENHNHAN> TimKiemBenhNhan(string benhNhan)
         {
             var danhSachBenhNhan = dal.loadDSBenhNhan();
