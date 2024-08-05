@@ -36,5 +36,36 @@ namespace GUI
             Controls.Add(ucThongTinBenhNhan);
         }
 
+        private void btnKetThuc_Click(object sender, EventArgs e)
+        {
+            string maToaThuoc;
+            // Tạo toa thuốc
+            maToaThuoc = TaoToaThuoc();
+            // Thêm chi tiết toa thuốc
+            ThemChiTietToaThuoc(maToaThuoc);
+            // Thêm chi tiết chẩn đoán
+            ThemChiTietChanDoan(maToaThuoc);
+        }
+
+        private void ThemChiTietChanDoan(string maToaThuoc)
+        {
+            ucThongTinChanDoan.ThemChiTietChanDoan(maToaThuoc);
+        }
+
+        private void ThemChiTietToaThuoc(string maToaThuoc)
+        {
+            ucThongTinChanDoan.ThemChiTietDonThuoc(maToaThuoc);
+        }
+
+        private string TaoToaThuoc()
+        {
+            string maPK = ucThongTinKham.LayMaPhieuKham();
+            string maNV = ucThongTinKham.LayMaBacSi();
+            DateTime ngayLap = ucThongTinKham.LayNgayLap();
+            int tongTien = ucThongTinChanDoan.TinhTongTien();
+            string loiDan = ucThongTinChanDoan.LayLoiDan();
+
+            return ucThongTinChanDoan.TaoToaThuoc(maPK, maNV, ngayLap, tongTien, loiDan);
+        }
     }
 }

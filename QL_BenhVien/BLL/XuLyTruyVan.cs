@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
@@ -63,6 +61,20 @@ namespace BLL
                 .Where(bn => bn.TENBENHNHAN.Contains(benhNhan) ||
                              bn.SDT.Contains(benhNhan))
                 .ToList();
+        }
+        public string TaoToaThuoc(TOATHUOC toaThuoc)
+        {
+            return dal.ThemToaThuoc(toaThuoc);
+        }
+
+        public void ThemChiTietToaThuoc(CHITIETTOATHUOC chiTietToaThuoc)
+        {
+            dal.ThemChiTietToaThuoc(chiTietToaThuoc);
+        }
+
+        public void ThemChiTietChanDoan(CHITIETCHUANDOAN chiTietChanDoan)
+        {
+            dal.ThemChiTietChanDoan(chiTietChanDoan);
         }
     }
 }

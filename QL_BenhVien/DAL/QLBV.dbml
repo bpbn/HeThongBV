@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_BENHVIEN" Class="QLBVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-QVIL76U;Initial Catalog=QL_BENHVIEN;Persist Security Info=True;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QL_BENHVIENConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=BPBN\SQLEXPRESS;Initial Catalog=QL_BENHVIEN;Persist Security Info=True;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QL_BENHVIENConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BENH" Member="BENHs">
     <Type Name="BENH">
       <Column Name="MABENH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -75,6 +75,7 @@
       <Column Name="CALAM" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
       <Column Name="PHONGLAMVIEC" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="NHANVIEN_LICHLAMVIEC" Member="NHANVIEN" ThisKey="MANHANVIEN" OtherKey="MANHANVIEN" Type="NHANVIEN" IsForeignKey="true" />
+      <Association Name="PHONGKHAM_LICHLAMVIEC" Member="PHONGKHAM" ThisKey="PHONGLAMVIEC" OtherKey="MAPHONG" Type="PHONGKHAM" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
@@ -126,6 +127,7 @@
       <Column Name="MAPHONG" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENPHONG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="VITRI" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="PHONGKHAM_LICHLAMVIEC" Member="LICHLAMVIECs" ThisKey="MAPHONG" OtherKey="PHONGLAMVIEC" Type="LICHLAMVIEC" />
       <Association Name="PHONGKHAM_PHIEUKHAM" Member="PHIEUKHAMs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="PHIEUKHAM" />
     </Type>
   </Table>
@@ -154,6 +156,7 @@
       <Column Name="TENTHUOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="QCDONGGOI" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
       <Column Name="DVT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TONKHO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="THUOC_CHITIETTOATHUOC" Member="CHITIETTOATHUOCs" ThisKey="MATHUOC" OtherKey="MATHUOC" Type="CHITIETTOATHUOC" />
     </Type>

@@ -43,17 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LayDanhSach.cs" />
+    <Compile Include="QLBV.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBV.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="QL_BENHVIENDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_BENHVIENDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TruyVan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="QLBV.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBV.dbml</DependentUpon>
     </Compile>
     <Compile Include="QuanLyBenhVien.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -78,6 +83,17 @@
     </None>
     <None Include="QLBV.dbml.layout">
       <DependentUpon>QLBV.dbml</DependentUpon>
+    </None>
+    <None Include="QL_BENHVIENDataSet.xsc">
+      <DependentUpon>QL_BENHVIENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_BENHVIENDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_BENHVIENDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_BENHVIENDataSet.xss">
+      <DependentUpon>QL_BENHVIENDataSet.xsd</DependentUpon>
     </None>
     <None Include="QuanLyBenhVien.xsc">
       <DependentUpon>QuanLyBenhVien.xsd</DependentUpon>

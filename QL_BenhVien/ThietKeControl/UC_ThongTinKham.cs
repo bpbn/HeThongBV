@@ -48,6 +48,21 @@ namespace ThietKeControl
             }
         }
 
+        public string LayMaPhieuKham()
+        {
+            return txtMaPK.Text;
+        }
+
+        public string LayMaBacSi()
+        {
+            return ((DAL.NHANVIEN) cboMaBS.SelectedItem).MANHANVIEN;
+        }
+
+        public DateTime LayNgayLap()
+        {
+            return DateTime.Today;
+        }
+
         private void LoadBacSiToComboBox()
         {
             danhSachBacSi = bll.dsBacSi();

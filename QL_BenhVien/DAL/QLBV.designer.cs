@@ -78,7 +78,7 @@ namespace DAL
     #endregion
 		
 		public QLBVDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QL_BENHVIENConnectionString, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QL_BENHVIENConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -1604,6 +1604,8 @@ namespace DAL
 		
 		private EntityRef<NHANVIEN> _NHANVIEN;
 		
+		private EntityRef<PHONGKHAM> _PHONGKHAM;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1623,6 +1625,7 @@ namespace DAL
 		public LICHLAMVIEC()
 		{
 			this._NHANVIEN = default(EntityRef<NHANVIEN>);
+			this._PHONGKHAM = default(EntityRef<PHONGKHAM>);
 			OnCreated();
 		}
 		
@@ -1721,6 +1724,10 @@ namespace DAL
 			{
 				if ((this._PHONGLAMVIEC != value))
 				{
+					if (this._PHONGKHAM.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
 					this.OnPHONGLAMVIECChanging(value);
 					this.SendPropertyChanging();
 					this._PHONGLAMVIEC = value;
@@ -1760,6 +1767,40 @@ namespace DAL
 						this._MANHANVIEN = default(string);
 					}
 					this.SendPropertyChanged("NHANVIEN");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONGKHAM_LICHLAMVIEC", Storage="_PHONGKHAM", ThisKey="PHONGLAMVIEC", OtherKey="MAPHONG", IsForeignKey=true)]
+		public PHONGKHAM PHONGKHAM
+		{
+			get
+			{
+				return this._PHONGKHAM.Entity;
+			}
+			set
+			{
+				PHONGKHAM previousValue = this._PHONGKHAM.Entity;
+				if (((previousValue != value) 
+							|| (this._PHONGKHAM.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._PHONGKHAM.Entity = null;
+						previousValue.LICHLAMVIECs.Remove(this);
+					}
+					this._PHONGKHAM.Entity = value;
+					if ((value != null))
+					{
+						value.LICHLAMVIECs.Add(this);
+						this._PHONGLAMVIEC = value.MAPHONG;
+					}
+					else
+					{
+						this._PHONGLAMVIEC = default(string);
+					}
+					this.SendPropertyChanged("PHONGKHAM");
 				}
 			}
 		}
@@ -2783,6 +2824,8 @@ namespace DAL
 		
 		private string _VITRI;
 		
+		private EntitySet<LICHLAMVIEC> _LICHLAMVIECs;
+		
 		private EntitySet<PHIEUKHAM> _PHIEUKHAMs;
 		
     #region Extensibility Method Definitions
@@ -2799,6 +2842,7 @@ namespace DAL
 		
 		public PHONGKHAM()
 		{
+			this._LICHLAMVIECs = new EntitySet<LICHLAMVIEC>(new Action<LICHLAMVIEC>(this.attach_LICHLAMVIECs), new Action<LICHLAMVIEC>(this.detach_LICHLAMVIECs));
 			this._PHIEUKHAMs = new EntitySet<PHIEUKHAM>(new Action<PHIEUKHAM>(this.attach_PHIEUKHAMs), new Action<PHIEUKHAM>(this.detach_PHIEUKHAMs));
 			OnCreated();
 		}
@@ -2863,6 +2907,19 @@ namespace DAL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONGKHAM_LICHLAMVIEC", Storage="_LICHLAMVIECs", ThisKey="MAPHONG", OtherKey="PHONGLAMVIEC")]
+		public EntitySet<LICHLAMVIEC> LICHLAMVIECs
+		{
+			get
+			{
+				return this._LICHLAMVIECs;
+			}
+			set
+			{
+				this._LICHLAMVIECs.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHONGKHAM_PHIEUKHAM", Storage="_PHIEUKHAMs", ThisKey="MAPHONG", OtherKey="MAPHONG")]
 		public EntitySet<PHIEUKHAM> PHIEUKHAMs
 		{
@@ -2894,6 +2951,18 @@ namespace DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_LICHLAMVIECs(LICHLAMVIEC entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHONGKHAM = this;
+		}
+		
+		private void detach_LICHLAMVIECs(LICHLAMVIEC entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHONGKHAM = null;
 		}
 		
 		private void attach_PHIEUKHAMs(PHIEUKHAM entity)
@@ -3297,6 +3366,8 @@ namespace DAL
 		
 		private string _DVT;
 		
+		private System.Nullable<int> _GIA;
+		
 		private System.Nullable<int> _TONKHO;
 		
 		private EntitySet<CHITIETTOATHUOC> _CHITIETTOATHUOCs;
@@ -3313,6 +3384,8 @@ namespace DAL
     partial void OnQCDONGGOIChanged();
     partial void OnDVTChanging(string value);
     partial void OnDVTChanged();
+    partial void OnGIAChanging(System.Nullable<int> value);
+    partial void OnGIAChanged();
     partial void OnTONKHOChanging(System.Nullable<int> value);
     partial void OnTONKHOChanged();
     #endregion
@@ -3399,6 +3472,26 @@ namespace DAL
 					this._DVT = value;
 					this.SendPropertyChanged("DVT");
 					this.OnDVTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIA", DbType="Int")]
+		public System.Nullable<int> GIA
+		{
+			get
+			{
+				return this._GIA;
+			}
+			set
+			{
+				if ((this._GIA != value))
+				{
+					this.OnGIAChanging(value);
+					this.SendPropertyChanging();
+					this._GIA = value;
+					this.SendPropertyChanged("GIA");
+					this.OnGIAChanged();
 				}
 			}
 		}
