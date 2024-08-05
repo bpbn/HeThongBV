@@ -105,3 +105,4 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\BouncyCastle.C
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\itext.bouncy-castle-adapter.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\BouncyCastle.Cryptography.xml
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\GUI\bin\Debug\itext.bouncy-castle-adapter.xml
+D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\GUI\obj\Debug\GUI.frmPhieuKham.resources

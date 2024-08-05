@@ -12,12 +12,12 @@ namespace GUI
 
         public FrmChanDoan()
         {
-           InitializeComponent();
+            InitializeComponent();
             ucThongTinBenhNhan = new UC_ThongTinBenhNhan();
             ucThongTinKham = new UC_ThongTinKham();
-            ucThongTinChanDoan = new UC_ThongTinChanDoan() ;
+            ucThongTinChanDoan = new UC_ThongTinChanDoan();
 
-            ucThongTinKham.CapNhatThongTinBenhNhan += UcThongTinKham_CapNhatThongTinBenhNhan; 
+            ucThongTinKham.CapNhatThongTinBenhNhan += UcThongTinKham_CapNhatThongTinBenhNhan;
 
             ucThongTinBenhNhan.Left = ucThongTinKham.Left = ucThongTinChanDoan.Left = 10;
 
@@ -32,8 +32,9 @@ namespace GUI
         private void UcThongTinKham_CapNhatThongTinBenhNhan(object sender, UC_ThongTinKham.CapNhatThongTinBenhNhanEventArgs e)
         {
             ucThongTinBenhNhan.SetBenhNhan(e.benhNhan);
-            
+
             Controls.Add(ucThongTinBenhNhan);
         }
+
     }
 }

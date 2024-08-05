@@ -30,6 +30,8 @@ namespace ThietKeControl
         private void InitializeComponent()
         {
             this.grbTTKham = new System.Windows.Forms.GroupBox();
+            this.btnXoaThuoc = new System.Windows.Forms.Button();
+            this.txtBenh = new System.Windows.Forms.TextBox();
             this.btnThemThuoc = new System.Windows.Forms.Button();
             this.txtLoiDan = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,6 +52,8 @@ namespace ThietKeControl
             // 
             // grbTTKham
             // 
+            this.grbTTKham.Controls.Add(this.btnXoaThuoc);
+            this.grbTTKham.Controls.Add(this.txtBenh);
             this.grbTTKham.Controls.Add(this.btnThemThuoc);
             this.grbTTKham.Controls.Add(this.txtLoiDan);
             this.grbTTKham.Controls.Add(this.label6);
@@ -68,14 +72,32 @@ namespace ThietKeControl
             this.grbTTKham.TabStop = false;
             this.grbTTKham.Text = "Thông tin chẩn đoán";
             // 
+            // btnXoaThuoc
+            // 
+            this.btnXoaThuoc.Location = new System.Drawing.Point(716, 120);
+            this.btnXoaThuoc.Name = "btnXoaThuoc";
+            this.btnXoaThuoc.Size = new System.Drawing.Size(87, 33);
+            this.btnXoaThuoc.TabIndex = 40;
+            this.btnXoaThuoc.Text = "Xoá thuốc";
+            this.btnXoaThuoc.UseVisualStyleBackColor = true;
+            this.btnXoaThuoc.Click += new System.EventHandler(this.BtnXoaThuoc_Click);
+            // 
+            // txtBenh
+            // 
+            this.txtBenh.Location = new System.Drawing.Point(551, 77);
+            this.txtBenh.Name = "txtBenh";
+            this.txtBenh.Size = new System.Drawing.Size(362, 26);
+            this.txtBenh.TabIndex = 39;
+            // 
             // btnThemThuoc
             // 
-            this.btnThemThuoc.Location = new System.Drawing.Point(826, 125);
+            this.btnThemThuoc.Location = new System.Drawing.Point(821, 120);
             this.btnThemThuoc.Name = "btnThemThuoc";
-            this.btnThemThuoc.Size = new System.Drawing.Size(87, 28);
+            this.btnThemThuoc.Size = new System.Drawing.Size(92, 33);
             this.btnThemThuoc.TabIndex = 38;
-            this.btnThemThuoc.Text = "Thêm";
+            this.btnThemThuoc.Text = "Thêm thuốc";
             this.btnThemThuoc.UseVisualStyleBackColor = true;
+            this.btnThemThuoc.Click += new System.EventHandler(this.BtnThemThuoc_Click);
             // 
             // txtLoiDan
             // 
@@ -114,6 +136,7 @@ namespace ThietKeControl
             this.dgvCTTT.Location = new System.Drawing.Point(161, 173);
             this.dgvCTTT.Name = "dgvCTTT";
             this.dgvCTTT.RowHeadersWidth = 51;
+            this.dgvCTTT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCTTT.Size = new System.Drawing.Size(752, 134);
             this.dgvCTTT.TabIndex = 6;
             // 
@@ -140,17 +163,18 @@ namespace ThietKeControl
             this.cboThuoc.FormattingEnabled = true;
             this.cboThuoc.Location = new System.Drawing.Point(161, 125);
             this.cboThuoc.Name = "cboThuoc";
-            this.cboThuoc.Size = new System.Drawing.Size(629, 27);
+            this.cboThuoc.Size = new System.Drawing.Size(531, 27);
             this.cboThuoc.TabIndex = 5;
+            this.cboThuoc.TextUpdate += new System.EventHandler(this.cboThuoc_TextUpdate);
             // 
             // cboBenh
             // 
             this.cboBenh.FormattingEnabled = true;
             this.cboBenh.Location = new System.Drawing.Point(161, 77);
             this.cboBenh.Name = "cboBenh";
-            this.cboBenh.Size = new System.Drawing.Size(752, 27);
+            this.cboBenh.Size = new System.Drawing.Size(358, 27);
             this.cboBenh.TabIndex = 4;
-            this.cboBenh.TextChanged += new System.EventHandler(this.cboBenh_TextChanged);
+            this.cboBenh.TextUpdate += new System.EventHandler(this.cboBenh_TextUpdate);
             // 
             // txtTrieuChung
             // 
@@ -162,7 +186,7 @@ namespace ThietKeControl
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 130);
+            this.label3.Location = new System.Drawing.Point(33, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 19);
             this.label3.TabIndex = 2;
@@ -171,7 +195,7 @@ namespace ThietKeControl
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 83);
+            this.label2.Location = new System.Drawing.Point(33, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 19);
             this.label2.TabIndex = 1;
@@ -219,5 +243,7 @@ namespace ThietKeControl
         private System.Windows.Forms.DataGridViewTextBoxColumn TENTHUOC;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG;
         private System.Windows.Forms.DataGridViewTextBoxColumn GHICHU;
+        private System.Windows.Forms.TextBox txtBenh;
+        private System.Windows.Forms.Button btnXoaThuoc;
     }
 }
