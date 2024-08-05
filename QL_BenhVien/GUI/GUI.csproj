@@ -159,11 +159,11 @@
     <Compile Include="frmLichLamViec.Designer.cs">
       <DependentUpon>frmLichLamViec.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="frmQuanLi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="frmQuanLi.Designer.cs">
+      <DependentUpon>frmQuanLi.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPhieuKham.cs">
       <SubType>Form</SubType>
@@ -191,8 +191,8 @@
     <EmbeddedResource Include="frmLichLamViec.resx">
       <DependentUpon>frmLichLamViec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="frmQuanLi.resx">
+      <DependentUpon>frmQuanLi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuKham.resx">
       <DependentUpon>frmPhieuKham.cs</DependentUpon>

@@ -8,7 +8,7 @@ using System.Data.Entity;
 
 namespace DAL
 {
-    public class LuuPhieuKham
+    public class LuuDuLieu
     {
         private QLBVDataContext dbContext = new QLBVDataContext();
 
@@ -29,6 +29,22 @@ namespace DAL
             dbContext.PHIEUKHAMs.InsertOnSubmit(phieuKham);
 
             // Lưu thay đổi vào cơ sở dữ liệu
+            dbContext.SubmitChanges();
+        }
+
+        public void SaveBenhNhan(string maBenhNhan, string tenBenhNhan, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi)
+        {
+            var benhNhan = new BENHNHAN
+            {
+                MABENHNHAN = maBenhNhan,
+                TENBENHNHAN = tenBenhNhan,
+                NGAYSINH = ngaySinh,
+                GIOITINH = gioiTinh,
+                SDT = sdt,
+                DIACHI = diaChi
+            };
+
+            dbContext.BENHNHANs.InsertOnSubmit(benhNhan);
             dbContext.SubmitChanges();
         }
     }

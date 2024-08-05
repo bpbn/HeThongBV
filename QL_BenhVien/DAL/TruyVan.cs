@@ -97,5 +97,32 @@ namespace DAL
                 .ToList();
         }
 
+        public List<TAIKHOAN> loadTaiKhoan()
+        {
+            return qlbv.TAIKHOANs.Select(tk => tk).ToList<TAIKHOAN>();
+        }
+
+        public string layLoaiTaiKhoan(string username)
+        {
+            return qlbv.TAIKHOANs.Where(tk => tk.TENTAIKHOAN == username)
+                .Select(tk => tk.LOAITAIKHOAN)
+                .FirstOrDefault();
+
+        }
+        public string layMaNhanVien(string username)
+        {
+            return qlbv.TAIKHOANs.Where(tk=>tk.TENTAIKHOAN == username)
+                .Select(tk=>tk.MANHANVIEN)
+                .FirstOrDefault();
+        }
+        public int laySoLuongPhieuKham()
+        {
+            return qlbv.PHIEUKHAMs.Count();
+        }
+
+        public int laySoLuongBenhNhan()
+        {
+            return qlbv.BENHNHANs.Count();
+        }
     }
 }

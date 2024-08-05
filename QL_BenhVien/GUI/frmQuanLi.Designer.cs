@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class frmMain
+    partial class frmQuanLi
     {
         /// <summary>
         /// Required designer variable.

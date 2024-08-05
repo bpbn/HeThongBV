@@ -9,7 +9,7 @@ namespace GUI
     internal static class Program
     {
 
-        public static frmMain FrmMain = null;
+        public static frmQuanLi FrmMain = null;
         public static frmDangNhap FrmDangNhap = null;
         /// <summary>
         /// The main entry point for the application.
@@ -20,7 +20,7 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FrmDangNhap = new frmDangNhap();
-            Application.Run(new frmPhieuKham());
+            Application.Run(FrmDangNhap);
         }
     }
 }

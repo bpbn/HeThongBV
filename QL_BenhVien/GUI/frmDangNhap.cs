@@ -14,6 +14,7 @@ namespace GUI
     public partial class frmDangNhap : Form
     {
         XuLyDangNhap login = new XuLyDangNhap();
+        XuLyTruyVan truyVanBLL = new XuLyTruyVan();
         public frmDangNhap()
         {
             InitializeComponent();
@@ -21,7 +22,6 @@ namespace GUI
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            XuLyDangNhap CauHinh = new XuLyDangNhap();
             if (string.IsNullOrEmpty(txtTenDangNhap.Text.Trim()))
             {
                 MessageBox.Show("Không được bỏ trống" + label1.Text.ToLower());
@@ -35,7 +35,7 @@ namespace GUI
                 return;
             }
 
-            var kq = CauHinh.Check_User(txtTenDangNhap.Text.Trim(), txtMatKhau.Text.Trim());
+            var kq = login.Check_User(txtTenDangNhap.Text.Trim(), txtMatKhau.Text.Trim());
             if (kq == LoginResult.Invalid)
             {
                 MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng, xin vui lòng kiểm tra lại!", "Thông báo");
@@ -46,10 +46,28 @@ namespace GUI
             }
             else
             {
+                string role = truyVanBLL.LayLoaiTaiKhoan(txtTenDangNhap.Text);
+                string maNhanVien = truyVanBLL.LayMaNhanVien(txtTenDangNhap.Text);
+
+                Form form;
+                switch(role)
+                {
+                    case "Quản lý":
+                        form = new frmQuanLi();
+                        break;
+                    case "Thu ngân":
+                        form = new frmPhieuKham(maNhanVien);
+                        break;
+                    case "Bác sĩ":
+                        form = new FrmChanDoan();
+                        break;
+                    default:
+                        MessageBox.Show("Không xác định được quyền của người dùng!", "Thông báo");
+                        return;
+                }    
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo");
-                frmMain frm = new frmMain();
                 this.Hide();
-                frm.Show();
+                form.Show();
             }
         }
 

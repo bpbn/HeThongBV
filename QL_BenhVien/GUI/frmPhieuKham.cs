@@ -23,15 +23,20 @@ namespace GUI
     {
         private XuLyTruyVan xlTruyVanBLL = new XuLyTruyVan();
 
-        public frmPhieuKham()
+        public frmPhieuKham(string maNhanVien)
         {
             InitializeComponent();
+            this.txtMaNhanVien.Text = maNhanVien;
+            
         }
 
         private void frmPhieuKham_Load(object sender, EventArgs e)
         {
             loadCboBacSi();
             loadBenhNhan();
+            string maPKTiepTheo = xlTruyVanBLL.TaoMaPhieuKham();
+            txtMaPhieuKham.Text = maPKTiepTheo;
+            grbTTBN.Enabled = false;
         }
 
 
@@ -70,18 +75,32 @@ namespace GUI
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
             grbTTBN.Enabled = true;
+
+            string maBenhNhan = xlTruyVanBLL.TaoMaBenhNhan();
+            txtMaBN.Text = maBenhNhan;
         }
 
         private void btnXuat_Click(object sender, EventArgs e)
         {
-            grbTTBN.Enabled = false;
+            DateTime ngaySinh = dtpNgaySinh.Value;
+            string gioiTinh = "";
+            if (rdoNam.Checked)
+            {
+                gioiTinh = "Nam";
+            }
+            else
+            {
+                gioiTinh = "Nữ";
+            }
+            string sdt = txtSDT.Text;
+            string diaChi = txtDiaChi.Text;
 
-            string maPhieuKham = "PK0502";
+            string maPhieuKham = txtMaPhieuKham.Text;
             string maBenhNhan = txtMaBN.Text;
             string tenBenhNhan = txtTenBN.Text;
             int tongTien = Convert.ToInt32(txtTongTien.Text); // Đảm bảo định dạng số chính xác
             string maPhong = txtMaPhong.Text;
-            string maNhanVien = "NV003";
+            string maNhanVien = txtMaNhanVien.Text;
             string trangThaiHen;
             if (rdoCoHen.Checked)
             {
@@ -98,9 +117,17 @@ namespace GUI
             // Gọi hàm xuất dữ liệu ra PDF
             ExportPhieuKhamToPdf(maPhieuKham, tenBenhNhan, tongTien, maPhong, maNhanVien, filePath);
 
+            if (grbTTBN.Enabled == true)
+            {
+                xlTruyVanBLL.SaveBenhNhan(maBenhNhan, tenBenhNhan, ngaySinh, gioiTinh, sdt, diaChi);
+            }
+
             xlTruyVanBLL.SavePhieuKham(maPhieuKham, maBenhNhan, tongTien, maPhong, trangThaiHen, maNhanVien);
 
-            MessageBox.Show("Phiếu khám đã được xuất ra file PDF!");
+            MessageBox.Show("Thành công!");
+
+            frmPhieuKham_Load(sender, e);
+
         }
 
         private void dgvBenhNhan_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -210,5 +237,7 @@ namespace GUI
                 }
             }
         }
+
+        
     }
 }

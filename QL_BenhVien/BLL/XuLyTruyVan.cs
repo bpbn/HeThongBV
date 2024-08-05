@@ -16,7 +16,7 @@ namespace BLL
         }
 
         private TruyVan dal = new TruyVan();
-        private LuuPhieuKham luuPhieuKhamBLL = new LuuPhieuKham();
+        private LuuDuLieu luuDataBLL = new LuuDuLieu();
 
         public List<THUOC> dsThuoc()
         {
@@ -82,8 +82,35 @@ namespace BLL
         }
         public void SavePhieuKham(string maPhieuKham, string maBenhNhan, int tongTien, string maPhong, string trangThaiHen, string maNhanVien)
         {
-            luuPhieuKhamBLL.SavePhieuKham(maPhieuKham, maBenhNhan, tongTien, maPhong, trangThaiHen, maNhanVien);
+            luuDataBLL.SavePhieuKham(maPhieuKham, maBenhNhan, tongTien, maPhong, trangThaiHen, maNhanVien);
         }
 
+        public string LayLoaiTaiKhoan(string username)
+        {
+            return dal.layLoaiTaiKhoan(username);
+        }
+        public string LayMaNhanVien(string username)
+        {
+            return dal.layMaNhanVien(username);
+        }
+        public string TaoMaPhieuKham()
+        {
+            int count = dal.laySoLuongPhieuKham();
+            count++;
+            string maMoi = "PK0" + count.ToString("D3");
+            return maMoi;
+        }
+
+        public string TaoMaBenhNhan()
+        {
+            int count = dal.laySoLuongBenhNhan();
+            count++;
+            string maMoi = "BN0" + count.ToString("D3");
+            return maMoi;
+        }
+        public void SaveBenhNhan(string maBenhNhan, string tenBenhNhan, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi)
+        {
+            luuDataBLL.SaveBenhNhan(maBenhNhan, tenBenhNhan, ngaySinh, gioiTinh, sdt, diaChi);
+        }
     }
 }
