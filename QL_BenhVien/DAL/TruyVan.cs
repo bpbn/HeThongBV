@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Runtime.Remoting.Contexts;
+using System.Text.RegularExpressions;
 
 namespace DAL
 {
@@ -65,6 +66,7 @@ namespace DAL
         {
             return qlbv.NHANVIENs.Select(nv => nv).ToList<NHANVIEN>();
         }
+
         public List<NHANVIEN> loadBacSi()
         {
             var danhSachBacSi = loadNhanVien()
@@ -73,6 +75,7 @@ namespace DAL
 
             return danhSachBacSi;
         }
+
         public List<LICHLAMVIEC> loadLichLamViec()
         {
             return qlbv.LICHLAMVIECs.Select(llv => llv).ToList<LICHLAMVIEC>();
@@ -85,6 +88,72 @@ namespace DAL
                 .FirstOrDefault();
 
             return phongLamViec;
+        }
+        public string ThemToaThuoc(TOATHUOC toaThuoc)
+        {
+            try
+            {
+                toaThuoc.MATOATHUOC = TaoMaTuDong(qlbv.TOATHUOCs.Max(t=>t.MATOATHUOC));
+                qlbv.TOATHUOCs.InsertOnSubmit(toaThuoc);
+                qlbv.SubmitChanges();
+
+                return toaThuoc.MATOATHUOC;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public void ThemChiTietToaThuoc(CHITIETTOATHUOC chiTietToaThuoc)
+        {
+            try
+            {
+                qlbv.CHITIETTOATHUOCs.InsertOnSubmit(chiTietToaThuoc);
+                qlbv.SubmitChanges();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public void ThemChiTietChanDoan(CHITIETCHUANDOAN chiTietChanDoan)
+        {
+            try
+            {
+                qlbv.CHITIETCHUANDOANs.InsertOnSubmit(chiTietChanDoan);
+                qlbv.SubmitChanges();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        private string TaoMaTuDong(string maCu)
+        {
+            // Sử dụng regex để tách phần chữ và phần số
+            Regex regex = new Regex(@"([A-Za-z]+)(\d+)");
+            Match match = regex.Match(maCu);
+
+            if (match.Success)
+            {
+                string prefix = match.Groups[1].Value;
+                int number = int.Parse(match.Groups[2].Value);
+
+                // Tăng số lên 1
+                number++;
+
+                // Định dạng số với 4 chữ số (0 đệm phía trước nếu cần)
+                string newNumber = number.ToString("D4");
+
+                // Ghép prefix và newNumber
+                return prefix + newNumber;
+            }
+
+            // Nếu mã không hợp lệ, trả về chuỗi gốc
+            return maCu;
         }
         public List<PHIEUHEN> loadDSPhieuHen()
         {

@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
@@ -59,6 +57,20 @@ namespace BLL
         public List<BENHNHAN> TimKiemBenhNhan(string keyword)
         {
             return dal.TimKiemBenhNhan(keyword);
+        }
+        public string TaoToaThuoc(TOATHUOC toaThuoc)
+        {
+            return dal.ThemToaThuoc(toaThuoc);
+        }
+
+        public void ThemChiTietToaThuoc(CHITIETTOATHUOC chiTietToaThuoc)
+        {
+            dal.ThemChiTietToaThuoc(chiTietToaThuoc);
+        }
+
+        public void ThemChiTietChanDoan(CHITIETCHUANDOAN chiTietChanDoan)
+        {
+            dal.ThemChiTietChanDoan(chiTietChanDoan);
         }
         public bool KiemTraPhieuHen(string tenBenhNhan, DateTime ngayHienTai, out string maBacSi)
         {

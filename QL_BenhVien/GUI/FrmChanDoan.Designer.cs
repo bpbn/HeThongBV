@@ -42,6 +42,7 @@ namespace GUI
             this.btnKetThuc.TabIndex = 0;
             this.btnKetThuc.Text = "Kết thúc";
             this.btnKetThuc.UseVisualStyleBackColor = true;
+            this.btnKetThuc.Click += new System.EventHandler(this.btnKetThuc_Click);
             // 
             // FrmChanDoan
             // 

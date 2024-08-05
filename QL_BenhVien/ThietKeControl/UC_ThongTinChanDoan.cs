@@ -25,7 +25,6 @@ namespace ThietKeControl
             cboThuoc.TextUpdate -= cboThuoc_TextUpdate;
             cboThuoc.TextUpdate += cboThuoc_TextUpdate;
 
-
             cboBenh.SelectedIndexChanged += cboBenh_SelectedIndexChanged;
 
             btnThemThuoc.Click -= BtnThemThuoc_Click;
@@ -33,6 +32,7 @@ namespace ThietKeControl
 
             btnXoaThuoc.Click -= BtnXoaThuoc_Click;
             btnXoaThuoc.Click += BtnXoaThuoc_Click;
+            dgvCTTT.Rows.Clear();
         }
 
         private void BtnXoaThuoc_Click(object sender, EventArgs e)
@@ -50,7 +50,6 @@ namespace ThietKeControl
             }
         }
 
-
         private void BtnThemThuoc_Click(object sender, EventArgs e)
         {
             if (cboThuoc.SelectedValue != null)
@@ -61,6 +60,78 @@ namespace ThietKeControl
 
                 dgvCTTT.Rows.Add(tenThuoc, soLuong, ghiChu);
             }
+        }
+
+        public void ThemChiTietChanDoan(string maToaThuoc)
+        {
+            string maBenh = ((DAL.BENH) cboBenh.SelectedItem).MABENH;
+
+            DAL.CHITIETCHUANDOAN chiTietChanDoan = new DAL.CHITIETCHUANDOAN();
+            chiTietChanDoan.MABENH = maBenh;
+            chiTietChanDoan.MATOATHUOC = maToaThuoc;
+
+            bll.ThemChiTietChanDoan(chiTietChanDoan);
+        }
+
+        public void ThemChiTietDonThuoc(string maToaThuoc)
+        {
+
+            foreach (DataGridViewRow row in dgvCTTT.Rows)
+            {
+                if (row.Cells[0].Value == null)
+                    continue;
+
+                string tenThuoc = row.Cells[0].Value.ToString();
+                int soLuong = int.Parse(row.Cells[1].Value.ToString());
+                string ghiChu = row.Cells[2].Value.ToString();
+
+                DAL.THUOC thuoc = danhSachThuoc.Find(t => t.TENTHUOC == tenThuoc);
+                string ma = thuoc.MATHUOC;
+                int? gia = thuoc.GIA;
+
+                DAL.CHITIETTOATHUOC chiTietToaThuoc = new DAL.CHITIETTOATHUOC();
+                chiTietToaThuoc.MATOATHUOC = maToaThuoc; // Mã toa thuốc
+                chiTietToaThuoc.DONGIA = gia; // Đơn giá thuốc
+                chiTietToaThuoc.MATHUOC = ma; // Mã thuốc
+                chiTietToaThuoc.SOLUONG = soLuong; // Số lượng
+                chiTietToaThuoc.GHICHU = ghiChu; // Ghi chú
+
+                bll.ThemChiTietToaThuoc(chiTietToaThuoc);
+            }
+        }
+
+        public string TaoToaThuoc(string maPK, string maNV, DateTime ngayLap, int tongTien, string loiDan)
+        {
+            DAL.TOATHUOC toaThuoc = new DAL.TOATHUOC();
+            toaThuoc.MAPHIEUKHAM = maPK;
+            toaThuoc.MANHANVIEN = maNV;
+            toaThuoc.NGAYLAP = ngayLap;
+            toaThuoc.TONGTIEN = tongTien;
+            toaThuoc.LOIDAN = loiDan;
+
+            return bll.TaoToaThuoc(toaThuoc);
+        }
+
+        public int TinhTongTien()
+        {
+            int tongTien = 0;
+            foreach (DataGridViewRow row in dgvCTTT.Rows)
+            {
+                if (row.Cells[0].Value == null)
+                    continue;
+
+                string tenThuoc = row.Cells[0].Value.ToString();
+                int soLuong = int.Parse(row.Cells[1].Value.ToString());
+
+                int? gia = danhSachThuoc.Find(t => t.TENTHUOC == tenThuoc).GIA;
+                tongTien += soLuong * (gia ?? 0);
+            }
+            return tongTien;
+        }
+
+        public string LayLoiDan()
+        {
+            return txtLoiDan.Text;
         }
 
         private void LoadBenhToComboBox()
