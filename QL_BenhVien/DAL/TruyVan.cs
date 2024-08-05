@@ -86,5 +86,16 @@ namespace DAL
 
             return phongLamViec;
         }
+        public List<PHIEUHEN> loadDSPhieuHen()
+        {
+            return qlbv.PHIEUHENs.Select(ph => ph).ToList<PHIEUHEN>();
+        }
+        public List<BENHNHAN> TimKiemBenhNhan(string keyword)
+        {
+            return qlbv.BENHNHANs
+                .Where(bn => bn.TENBENHNHAN.Contains(keyword) || bn.SDT.Contains(keyword))
+                .ToList();
+        }
+
     }
 }

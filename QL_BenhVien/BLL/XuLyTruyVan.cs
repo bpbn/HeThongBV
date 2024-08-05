@@ -16,6 +16,7 @@ namespace BLL
         }
 
         private TruyVan dal = new TruyVan();
+        private LuuPhieuKham luuPhieuKhamBLL = new LuuPhieuKham();
 
         public List<BENH> TimKiemBenh(string tuKhoa)
         {
@@ -71,13 +72,34 @@ namespace BLL
         {
             return dal.loadBacSi();
         }
-        public List<BENHNHAN> TimKiemBenhNhan(string benhNhan)
+        public List<BENHNHAN> TimKiemBenhNhan(string keyword)
         {
-            var danhSachBenhNhan = dal.loadDSBenhNhan();
-            return danhSachBenhNhan
-                .Where(bn => bn.TENBENHNHAN.Contains(benhNhan) ||
-                             bn.SDT.Contains(benhNhan))
-                .ToList();
+            return dal.TimKiemBenhNhan(keyword);
         }
+        public bool KiemTraPhieuHen(string tenBenhNhan, DateTime ngayHienTai, out string maBacSi)
+        {
+            var phieuHen = dal.loadDSPhieuHen()
+                .FirstOrDefault(ph => ph.TENBENHNHAN.Equals(tenBenhNhan, StringComparison.OrdinalIgnoreCase)
+                                    && ph.NGAYKHAM.HasValue && ph.NGAYKHAM.Value.Date == ngayHienTai.Date);
+
+            if (phieuHen != null)
+            {
+                maBacSi = phieuHen.MANHANVIEN;
+                return true;
+            }
+
+            maBacSi = null;
+            return false;
+        }
+        public NHANVIEN LayThongTinBacSi(string maBacSi)
+        {
+            var danhSachBacSi = dal.loadBacSi();
+            return danhSachBacSi.FirstOrDefault(nv => nv.MANHANVIEN.Equals(maBacSi, StringComparison.OrdinalIgnoreCase));
+        }
+        public void SavePhieuKham(string maPhieuKham, string maBenhNhan, int tongTien, string maPhong, string trangThaiHen, string maNhanVien)
+        {
+            luuPhieuKhamBLL.SavePhieuKham(maPhieuKham, maBenhNhan, tongTien, maPhong, trangThaiHen, maNhanVien);
+        }
+
     }
 }
