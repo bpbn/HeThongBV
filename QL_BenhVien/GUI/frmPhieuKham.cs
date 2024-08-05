@@ -1,5 +1,9 @@
 ﻿using BLL;
 using DAL;
+using iText.Kernel.Pdf;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+using iText.Layout;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +14,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThietKeControl;
+using iText.IO.Font;
+using iText.Kernel.Font;
 
 namespace GUI
 {
@@ -26,7 +32,6 @@ namespace GUI
         {
             loadCboBacSi();
             loadBenhNhan();
-            dgvBenhNhan.RowSelected += dgvBenhNhan_RowSelected;
         }
 
 
@@ -39,7 +44,7 @@ namespace GUI
         private void loadBenhNhan()
         {
             DataTable data = XuLyTruyVan.GetTableData("BENHNHAN");
-            dgvBenhNhan.SetDataSource(data);
+            dgvBenhNhan.DataSource = data;
         }
 
         private void cboBacSi_SelectedIndexChanged(object sender, EventArgs e)
@@ -47,10 +52,10 @@ namespace GUI
             var selectedBacSi = cboBacSi.SelectedItem.ToString();
             var manv = xlTruyVanBLL.dsBacSi().FirstOrDefault(nv => nv.TENNHANVIEN == selectedBacSi)?.MANHANVIEN;
 
-            if(manv != null )
+            if (manv != null)
             {
                 var tenPhongLamViec = xlTruyVanBLL.LayTenPhongLamViec(manv);
-                txtPhong.Text = tenPhongLamViec;
+                txtMaPhong.Text = tenPhongLamViec;
             }
         }
 
@@ -58,8 +63,7 @@ namespace GUI
         {
             string benhNhan = txtTimKiem.Text;
             var kq = xlTruyVanBLL.TimKiemBenhNhan(benhNhan);
-            var dataTable = ConvertToDataTable(kq);
-            dgvBenhNhan.SetDataSource(dataTable);
+            dgvBenhNhan.DataSource = kq;
 
         }
 
@@ -71,39 +75,139 @@ namespace GUI
         private void btnXuat_Click(object sender, EventArgs e)
         {
             grbTTBN.Enabled = false;
-        }
 
-        private DataTable ConvertToDataTable(List<BENHNHAN> danhSachBenhNhan)
-        {
-            var dataTable = new DataTable();
-            dataTable.Columns.Add("MABENHNHAN", typeof(string));
-            dataTable.Columns.Add("TENBENHNHAN", typeof(string));
-            dataTable.Columns.Add("NGAYSINH", typeof(DateTime));
-            dataTable.Columns.Add("GIOITINH", typeof(string));
-            dataTable.Columns.Add("SDT", typeof(string));
-            dataTable.Columns.Add("DIACHI", typeof(string));
-
-            foreach (var bn in danhSachBenhNhan)
+            string maPhieuKham = "PK0502";
+            string maBenhNhan = txtMaBN.Text;
+            string tenBenhNhan = txtTenBN.Text;
+            int tongTien = Convert.ToInt32(txtTongTien.Text); // Đảm bảo định dạng số chính xác
+            string maPhong = txtMaPhong.Text;
+            string maNhanVien = "NV003";
+            string trangThaiHen;
+            if (rdoCoHen.Checked)
             {
-                dataTable.Rows.Add(bn.MABENHNHAN, bn.TENBENHNHAN, bn.NGAYSINH, bn.GIOITINH, bn.SDT, bn.DIACHI);
+                trangThaiHen = "Có hẹn";
+            }
+            else
+            {
+                trangThaiHen = "Không có hẹn";
             }
 
-            return dataTable;
+            // Đường dẫn lưu file PDF
+            string filePath = "D:\\PhieuKham.pdf";
+
+            // Gọi hàm xuất dữ liệu ra PDF
+            ExportPhieuKhamToPdf(maPhieuKham, tenBenhNhan, tongTien, maPhong, maNhanVien, filePath);
+
+            xlTruyVanBLL.SavePhieuKham(maPhieuKham, maBenhNhan, tongTien, maPhong, trangThaiHen, maNhanVien);
+
+            MessageBox.Show("Phiếu khám đã được xuất ra file PDF!");
         }
 
-        private void dgvBenhNhan_RowSelected(object sender, DataRow e)
+        private void dgvBenhNhan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e != null)
+            if (e.RowIndex >= 0)
             {
-                txtMaBN.Text = e["MABENHNHAN"].ToString();
-                txtTenBN.Text = e["TENBENHNHAN"].ToString();
-                txtSDT.Text = e["SDT"].ToString();
-                txtDiaChi.Text = e["DIACHI"].ToString();
-                dtpNgaySinh.Value = Convert.ToDateTime(e["NGAYSINH"]);
+                var selectedRow = dgvBenhNhan.Rows[e.RowIndex];
+                txtMaBN.Text = selectedRow.Cells["MABENHNHAN"].Value.ToString();
+                txtTenBN.Text = selectedRow.Cells["TENBENHNHAN"].Value.ToString();
+                txtSDT.Text = selectedRow.Cells["SDT"].Value.ToString();
+                txtDiaChi.Text = selectedRow.Cells["DIACHI"].Value.ToString();
+                dtpNgaySinh.Value = Convert.ToDateTime(selectedRow.Cells["NGAYSINH"].Value);
 
-                var gioiTinh = e["GIOITINH"].ToString();
+                var gioiTinh = selectedRow.Cells["GIOITINH"].Value.ToString();
                 rdoNam.Checked = gioiTinh.Equals("Nam", StringComparison.OrdinalIgnoreCase);
                 rdoNu.Checked = gioiTinh.Equals("Nữ", StringComparison.OrdinalIgnoreCase);
+            }
+
+
+            string maBacSi;
+            if (xlTruyVanBLL.KiemTraPhieuHen(txtTenBN.Text, DateTime.Now, out maBacSi))
+            {
+                // Nếu có phiếu hẹn, chọn radio button có hẹn
+                rdoCoHen.Checked = true;
+
+                // Lấy thông tin bác sĩ
+                var bacSi = xlTruyVanBLL.LayThongTinBacSi(maBacSi);
+                if (bacSi != null)
+                {
+                    cboBacSi.DataSource = new List<string> { bacSi.TENNHANVIEN };
+                    cboBacSi.SelectedIndex = 0;
+
+                    var tenPhongLamViec = xlTruyVanBLL.LayTenPhongLamViec(maBacSi);
+                    txtMaPhong.Text = tenPhongLamViec;
+                }
+                else
+                {
+                    // Nếu không có phiếu hẹn, bỏ chọn radio button có hẹn và xóa tên bác sĩ
+                    rdoKhongCoHen.Checked = true;
+                    loadCboBacSi();
+                    txtMaPhong.Text = string.Empty;
+                }
+            }
+            else
+            {
+                // Nếu không có phiếu hẹn, bỏ chọn radio button có hẹn và xóa tên bác sĩ
+                rdoKhongCoHen.Checked = true;
+                loadCboBacSi();
+                txtMaPhong.Text = string.Empty;
+            }
+        }
+
+        public void ExportPhieuKhamToPdf(string maPhieuKham, string tenBenhNhan, decimal tongTien, string maPhong, string maNhanVien, string filePath)
+        {
+            using (var writer = new PdfWriter(filePath))
+            {
+                using (var pdf = new PdfDocument(writer))
+                {
+                    var document = new Document(pdf);
+
+                    string fontPath = "C:\\WINDOWS\\FONTS\\TIMES.TTF";
+                    PdfFont font = PdfFontFactory.CreateFont(fontPath, PdfEncodings.IDENTITY_H);
+
+                    // Thêm tiêu đề
+                    document.Add(new Paragraph("Phiếu Khám")
+                        .SetFontSize(18)
+                        .SetBold()
+                        .SetFont(font)
+                        .SetTextAlignment(TextAlignment.CENTER)
+                        .SetMarginBottom(20));
+
+                    // Thêm thông tin phiếu khám
+                    document.Add(new Paragraph($"Mã Phiếu Khám: {maPhieuKham}")
+                        .SetFont(font)
+                        .SetFontSize(14)
+                        .SetMarginBottom(10));
+
+                    document.Add(new Paragraph($"Tên Bệnh Nhân: {tenBenhNhan}")
+                        .SetFont(font)
+                        .SetFontSize(14)
+                        .SetMarginBottom(10));
+
+                    document.Add(new Paragraph($"Tổng Tiền: {tongTien:C}") // Định dạng số tiền theo kiểu tiền tệ
+                        .SetFont(font)
+                        .SetFontSize(14)
+                        .SetMarginBottom(10));
+
+                    document.Add(new Paragraph($"Mã Phòng: {maPhong}")
+                        .SetFont(font)
+                        .SetFontSize(14)
+                        .SetMarginBottom(10));
+
+                    document.Add(new Paragraph($"Mã Nhân Viên: {maNhanVien}")
+                        .SetFont(font)
+                        .SetFontSize(14)
+                        .SetMarginBottom(10));
+
+                    // Thêm chân trang nếu cần
+                    document.Add(new Paragraph("Đây là phiếu khám chính thức.")
+                        .SetTextAlignment(TextAlignment.CENTER)
+                        .SetFont(font)
+                        .SetFontSize(10)
+                        .SetMarginTop(20));
+
+                    // Đóng tài liệu PDF
+                    document.Close();
+                }
             }
         }
     }
