@@ -22,7 +22,7 @@ namespace ThietKeControl
         {
             InitializeComponent();
             txtMaPK.TextChanged += txtMaPK_TextChanged;
-            cboMaBS.TextUpdate += cboMaBS_TextUpdate; 
+            cboMaBS.TextUpdate += cboMaBS_TextUpdate;
             LoadBacSiToComboBox();
         }
 

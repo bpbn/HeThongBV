@@ -21,14 +21,16 @@ namespace ThietKeControl
 
             cboBenh.TextUpdate -= cboBenh_TextUpdate;
             cboBenh.TextUpdate += cboBenh_TextUpdate;
+
             cboThuoc.TextUpdate -= cboThuoc_TextUpdate;
             cboThuoc.TextUpdate += cboThuoc_TextUpdate;
 
-            cboBenh.SelectedIndexChanged -= cboBenh_SelectedIndexChanged;
+
             cboBenh.SelectedIndexChanged += cboBenh_SelectedIndexChanged;
 
             btnThemThuoc.Click -= BtnThemThuoc_Click;
             btnThemThuoc.Click += BtnThemThuoc_Click;
+
             btnXoaThuoc.Click -= BtnXoaThuoc_Click;
             btnXoaThuoc.Click += BtnXoaThuoc_Click;
         }
@@ -54,8 +56,8 @@ namespace ThietKeControl
             if (cboThuoc.SelectedValue != null)
             {
                 string tenThuoc = cboThuoc.Text;
-                int soLuong = 1; 
-                string ghiChu = ""; 
+                int soLuong = 1;
+                string ghiChu = "";
 
                 dgvCTTT.Rows.Add(tenThuoc, soLuong, ghiChu);
             }
@@ -133,7 +135,7 @@ namespace ThietKeControl
             {
                 if (cboBenh.SelectedValue.ToString() == "B0048")
                 {
-                    txtBenh.Visible = true; 
+                    txtBenh.Visible = true;
                 }
                 else
                 {
