@@ -78,7 +78,7 @@ namespace DAL
     #endregion
 		
 		public QLBVDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QL_BENHVIENConnectionString1, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QL_BENHVIENConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

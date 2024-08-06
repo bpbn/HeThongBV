@@ -14,6 +14,8 @@ namespace GUI
 {
     public partial class frmXepLichLamViec : Form
     {
+        LayDanhSach layDanhSach = new LayDanhSach();
+
         public frmXepLichLamViec()
         {
             InitializeComponent();
@@ -35,12 +37,40 @@ namespace GUI
             // Ngày cuối cùng của tuần sau
             DateTime endDate = startDate.AddDays(6);
 
-            // Gọi phương thức để xếp lịch
-            xepLichLamViecBLL.XepLichLamViecChoBacSi(startDate, endDate);
+            List<DateTime> dsNgayTrongTuanToi = dsNgayCuaTuanTiepTheo(today);
+            bool lichTonTai = false;
+            foreach(var day in dsNgayTrongTuanToi)
+            {
+                if (layDanhSach.ktraTonTaiNgayTrongLLV(day))
+                {
+                    lichTonTai = true;
+                    break;
+                }
+            }
 
-            // Tải lịch làm việc và thông báo
-            LoadLichLamViec();
-            MessageBox.Show("Đã xếp lịch làm việc cho bác sĩ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            List<DateTime> daysInLastWeek = dsNgayCuaTuanCuoiCung(today.Year, today.Month);
+            if (!lichTonTai)
+            {
+                if (daysInLastWeek.Contains(today.Date))
+                {
+                    DialogResult rs = MessageBox.Show("Nếu bây giờ xếp lịch cho tháng mới, lịch của tháng cũ sẽ bị xóa! Bạn có muốn tiếp tục không?", "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (rs == DialogResult.Yes)
+                    {
+                        layDanhSach.XoaLichLamViec();
+                        xepLichLamViecBLL.XepLichLamViecChoBacSi(startDate, endDate);
+                    }
+                }
+                else
+                {
+                    xepLichLamViecBLL.XepLichLamViecChoBacSi(startDate, endDate);
+                }
+                LoadLichLamViec();
+                MessageBox.Show("Đã xếp lịch làm việc cho bác sĩ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Lịch đã được xếp!");
+            }    
         }
 
         public void LoadLichLamViec()
@@ -51,9 +81,39 @@ namespace GUI
 
         private void btnXoaLich_Click(object sender, EventArgs e)
         {
-            LayDanhSach layDanhSach = new LayDanhSach();
             layDanhSach.XoaLichLamViec();
             LoadLichLamViec();
         }
+
+        public static List<DateTime> dsNgayCuaTuanCuoiCung(int year, int month)
+        {
+            List<DateTime> days = new List<DateTime>();
+            DateTime ngayCuoiThang = new DateTime(year, month, DateTime.DaysInMonth(year, month));
+            int ngayDauCuaTuanCuoiCung = DayOfWeek.Monday - ngayCuoiThang.DayOfWeek;
+            DateTime ngayThuHaiCuoiCung = ngayCuoiThang.AddDays(ngayDauCuaTuanCuoiCung);
+
+            if (ngayThuHaiCuoiCung.Month != month)
+            {
+                ngayThuHaiCuoiCung = ngayThuHaiCuoiCung.AddDays(7);
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                days.Add(ngayThuHaiCuoiCung.AddDays(i));
+            }
+            return days;
+        }
+
+        public List<DateTime> dsNgayCuaTuanTiepTheo(DateTime currentDate)
+        {
+            List<DateTime > days = new List<DateTime>();
+            DateTime ngayDauTuanTiepTheo = currentDate.AddDays(7 -(int)currentDate.DayOfWeek + (int)DayOfWeek.Monday);
+            for(int  i = 0; i < 7;i++)
+            {
+                days.Add(ngayDauTuanTiepTheo.AddDays(i));
+            }
+            return days;
+        }
+        
     }
 }

@@ -15,7 +15,7 @@ namespace BLL
             var danhSachPhong = _layDanhSach.LayDanhSachPhong();
 
             // Xóa lịch làm việc cũ trước khi xếp lịch mới
-            _layDanhSach.XoaLichLamViec();
+            //_layDanhSach.XoaLichLamViec();
 
             var lichLamViecMoi = new List<LICHLAMVIEC>();
             var random = new Random();
@@ -70,5 +70,6 @@ namespace BLL
         {
             _layDanhSach.XoaLichLamViec();
         }
+
     }
 }

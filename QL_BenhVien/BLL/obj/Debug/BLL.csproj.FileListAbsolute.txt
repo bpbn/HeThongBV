@@ -1,7 +1,6 @@
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\BLL.dll.config
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\BLL.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\BLL.pdb
-D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.dll
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.pdb
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.dll.config
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
@@ -20,3 +19,4 @@ D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.CopyComple
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.dll
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.pdb
 D:\Projects\QLBenhVien\HeThongBV\QL_BenhVien\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\BLL\bin\Debug\DAL.dll

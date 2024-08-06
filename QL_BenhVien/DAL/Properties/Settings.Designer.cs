@@ -38,21 +38,10 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-QVIL76U;Initial Catalog=QL_BENHVIEN;User ID=sa;Password=123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-QVIL76U;Initial Catalog=QL_BENHVIEN;User ID=sa;Password=123;")]
         public string QL_BENHVIENConnectionString {
             get {
                 return ((string)(this["QL_BENHVIENConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=BPBN\\SQLEXPRESS;Initial Catalog=QL_BENHVIEN;Persist Security Info=Tru" +
-            "e;User ID=sa;Password=123")]
-        public string QL_BENHVIENConnectionString1 {
-            get {
-                return ((string)(this["QL_BENHVIENConnectionString1"]));
             }
         }
     }
