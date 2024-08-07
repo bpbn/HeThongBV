@@ -43,9 +43,10 @@
 |----------------|--------------------|--------------------|
 |  1  | Đăng nhập |   Quỳnh  |
 |  2  | Quản lí danh sách|  Quỳnh |
-|  3  | Xem lịch làm việc|  Quỳnh |
-|  4  | Lập phiếu khám |  Quỳnh |
-|  5  | Chẩn đoán, kê đơn thuốc|  Ngọc |
+|  3  | Xếp lịch làm việc|  Quỳnh |
+|  4  | Xem lịch làm việc|  Quỳnh |
+|  5  | Lập phiếu khám |  Quỳnh |
+|  6  | Chẩn đoán, kê đơn thuốc|  Ngọc |
 
 
 ## Chức năng
@@ -69,45 +70,24 @@
 Đăng nhập hệ thống
 </p>
 <p>
-Quản lý CRUD các danh sách
+Quản lý danh sách
 </p>
 <ul>
 <li>Thêm, xóa và cập nhật </li>
 <li>Tìm kiếm</li>
 </ul>
-<p>
-Quản lý khách hàng
-</p>
+<p>Xếp lịch làm việc tự động</p>
+<p>Xem lịch làm việc theo từng tháng</p>
+<p>Lập phiếu khám</p>
 <ul>
-<li>Thêm và cập nhật </li>
-<li>Tra cứu thông tin khách hàng</li>
+  <li>Kiểm tra lịch hẹn của bệnh nhân</li>
+  <li>Thêm bệnh nhân nếu chưa có bệnh nhân này trong danh sách bệnh nhân</li>
+  <li>Lập và xuất phiếu khám ra PDF</li>
 </ul>
-<p>
-Quản lý tin tức
-</p>
+<p>Chẩn đoán bệnh và kê đơn thuốc</p>
 <ul>
-<li>Thêm và cập nhật </li>
-<li>Duyệt tin tức </li>
-</ul>
-<p>
-Quản lý nhân viên và chức vụ
-</p>
-<ul>
-<li>Thêm và cập nhật </li>
-<li> Phân quyền nhân viên tùy theo chức vụ</li>
-<li> Tra cứu thông tin của nhân viên </li></li>
-</ul>
-<p>
-Báo cáo
-</p>
-<ul>
-<li>Sách được mau nhiều nhất trong tháng </li>
-<li> Sách đuợc Thêm vào yêu thích nhiều nhất</li></li>
-</ul>
-<p>
-Thống kê</p>
-<ul>
-<li>Doanh thu </li>
-<li> Đơn hàng theo ngày theo tháng, theo năm</li></li>
+  <li>Tìm kiếm bệnh</li>
+  <li>Tìm thuốc và kê thuốc</li>
+  <li>Lập toa thuốc</li>
 </ul>
 
