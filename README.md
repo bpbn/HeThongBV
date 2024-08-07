@@ -12,10 +12,6 @@
 ### Sử dụng 
  - .Net Framework version 4.8
  - Visual studio 2019-2022
------------------------------------------------
-
-### Chi tiết
-<img src="https://i.imgur.com/FehXExF.jpg">
 
 -----------------------------------------------
 # Dự án
@@ -23,11 +19,7 @@
 ## Hệ thống quản lý bệnh viện
 
 <h5>Mô tả dự án: </h5>
-<p>Ebook là một hệ thống ứng dụng đa nền tảng cho phép người dùng đọc sách điện tử (ebook) trực tuyến. Hệ thống này sẽ mở ra khả năng đọc sách trực tuyến qua giao diện web, đồng thời cung cấp một ứng dụng tiện lợi để quản lý sách một cách hiệu quả.</p>
-
-<p>Được truy cập thông qua mạng, người dùng sẽ có cơ hội trải nghiệm không gian đọc sách độc đáo với sự tiện ích và linh hoạt mà chỉ công nghệ có thể mang lại. Không còn cần phải mang theo sách giấy, không gian sách điện tử sẽ tiết kiệm không gian và mang đến trải nghiệm đọc sách linh hoạt hơn bao giờ hết. Từ những trang sách kinh điển cho đến những tác phẩm hiện đại, mọi thứ đều có thể được truy cập và đọc một cách thuận tiện. </p>
-<p>Song song với việc đọc sách trực tuyến, ứng dụng đi kèm cung cấp một giao diện quản lý tiện lợi. Người dùng có thể tổ chức và quản lý tài liệu sách của mình theo cách riêng biệt, từ việc đánh dấu, sắp xếp theo thể loại cho đến tìm kiếm nhanh bằng cách sử dụng các tiện ích tìm kiếm thông minh. Điều này mang lại sự tiện lợi và hiệu quả cho việc tìm kiếm và sử dụng tài liệu sách, từ đó khuyến khích sự học hỏi và nghiên cứu một cách linh hoạt và hiệu quả hơn.
-</p>
+<p>Để bệnh nhân có thể dễ dàng đặt lịch hẹn khám bệnh và các nhân viên, y bác sĩ có thể dễ dàng thao tác theo dõi lịch trình làm việc cũng như là chẩn đoán kê đơn bệnh cho bệnh nhân được nhanh và chính xác chính là lý do mà hệ thống này ra đời. Với giao diện website thân thiện, dễ thao tác, bệnh nhân có thể thông qua website thực việc đặt lịch hẹn khám tại bệnh viện theo khung giờ hoặc theo bác sĩ mình mong muốn. Ngoài ra đối với hệ thống, các bác sĩ cũng có thể dễ dàng theo dõi lịch làm việc mình được giao cũng như là việc chẩn đoán và kê đơn thuốc cũng được kiểm soát dễ dàng hơn. Ban quản lý khi sử dụng hệ thống sẽ quản lí hầu hết các tác vụ có trong hệ thống hoặc truy xuất một số thông tin của bệnh viện</p>
 
 ### Yêu cầu 
 <p>Thuật toán: Xếp lịch làm việc tự động  </p>
@@ -49,57 +41,39 @@
 
 | STT | Nghiệp vụ | Phân công  |
 |----------------|--------------------|--------------------|
-|  1  |  Đăng nhập/đăng xuất |   Quỳnh  |
-|  2  | Phân quyền  |  Thảo |
+|  1  | Đăng nhập |   Quỳnh  |
+|  2  | Quản lí danh sách|  Quỳnh |
+|  3  | Xem lịch làm việc|  Quỳnh |
+|  4  | Lập phiếu khám |  Quỳnh |
+|  5  | Chẩn đoán, kê đơn thuốc|  Ngọc |
 
 
 ## Chức năng
-#### WEDSITE
-<p>Tìm kiếm và hiện thi thông tin sách:</p>
+#### WEBSITE
+<p>Đặt lịch hẹn: </p>
 <ul>
-  <li>Tìm kiếm sách theo tên, tác giả, thể loại, từ khóa, v.v.</li>
-  <li>Hiển thị thông tin chi tiết của mỗi cuốn sách, bao gồm mô tả, tác giả, đánh giá, v.v.</li>
+  <li>Đặt lịch theo bác sĩ</li>
+  <li>Đặt lịch theo ngày</li>
 </ul>
 <p>
-  Giỏ hàng, Mua sách và thanh toán:
+  Hiển thị thông tin bác sĩ
 </p>
 <ul>
-  <li>Thêm sách vào giỏ hàng </li>
-  <li>Xem lại giỏ hàng trước khi tiến hành thanh toán</li>
-   <li>Hỗ trợ nhiều phương thức thanh toán an toàn như ví điện tử, v.v.</li>
-	<li>Hiển thị thông tin chi tiết của giỏ hàng và tổng số tiền.</li>
-</ul>
-<p>
- Quản lý thông tin tài khoản 
-</p>
-<ul>
-<li>
-    Đăng ký và đăng nhập tài khoản cho người dùng.
-  </li>
-  <li>Quản lý thông tin cá nhân, mật khẩu</li>
-  <li>Hiển thị danh sách các cuốn sách mà người dùng đã mua hoặc tải về.</li>
-<li>Đơn hàng của người dùng</li>
-<li>Hiện thị sách yêu thích</li>
-<li>Thông tin tài khoản</li>
- <li>Đổi mật khẩuh</li>
-<li>Thông tin khách hàng</li>
-<li>Người dùng có thể đánh giá và viết nhận xét về các cuốn sách.</li>
+  <li>Lọc bác sĩ theo từng yếu tố</li>
+  <li>Xem thông tin chi tiết về bác sĩ</li>
 </ul>
 
 #### APP
 
 <p>
-Quản lý sách
+Đăng nhập hệ thống
 </p>
-<ul>
-<li>Thêm và cập nhật sách</li>
-<li>Tra cứu thông tin sách</li>
-</ul>
 <p>
-Quản lý thể loại và nhà xuất bản
+Quản lý CRUD các danh sách
 </p>
 <ul>
-<li>Thêm và cập nhật </li>
+<li>Thêm, xóa và cập nhật </li>
+<li>Tìm kiếm</li>
 </ul>
 <p>
 Quản lý khách hàng
