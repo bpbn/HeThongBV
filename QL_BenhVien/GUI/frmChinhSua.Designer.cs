@@ -103,6 +103,7 @@
             this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Tìm kiếm";
+            this.label1.Visible = false;
             // 
             // txtTimKiem
             // 
@@ -111,6 +112,7 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(341, 33);
             this.txtTimKiem.TabIndex = 14;
+            this.txtTimKiem.Visible = false;
             // 
             // btnXoa
             // 
