@@ -68,15 +68,12 @@
 <p>
 Đăng nhập hệ thống
 </p>
-<ul>
-<li>Thêm và cập nhật sách</li>
-<li>Tra cứu thông tin sách</li>
-</ul>
 <p>
-Quản lý thể loại và nhà xuất bản
+Quản lý CRUD các danh sách
 </p>
 <ul>
-<li>Thêm và cập nhật </li>
+<li>Thêm, xóa và cập nhật </li>
+<li>Tìm kiếm</li>
 </ul>
 <p>
 Quản lý khách hàng
