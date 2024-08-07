@@ -38,3 +38,6 @@ D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\BLL
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\DAL.pdb
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\bin\Debug\DAL.dll.config
 D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeC.60F70EA0.Up2Date
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_NhanVien.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_PhongKham.resources
+D:\STUDY\Project Group\PTPMTM\HeThongBV\QL_BenhVien\ThietKeControl\obj\Debug\ThietKeControl.uc_TaiKhoan.resources

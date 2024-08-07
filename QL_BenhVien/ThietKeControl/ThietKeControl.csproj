@@ -62,6 +62,24 @@
     <Compile Include="uc_Days.Designer.cs">
       <DependentUpon>uc_Days.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_NhanVien.Designer.cs">
+      <DependentUpon>uc_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_PhongKham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_PhongKham.Designer.cs">
+      <DependentUpon>uc_PhongKham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_TaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_TaiKhoan.Designer.cs">
+      <DependentUpon>uc_TaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_ThongTinBenhNhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc_Days.resx">
       <DependentUpon>uc_Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_NhanVien.resx">
+      <DependentUpon>uc_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_PhongKham.resx">
+      <DependentUpon>uc_PhongKham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_TaiKhoan.resx">
+      <DependentUpon>uc_TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_ThongTinBenhNhan.resx">
       <DependentUpon>UC_ThongTinBenhNhan.cs</DependentUpon>

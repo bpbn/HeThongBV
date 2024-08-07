@@ -28,31 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPhieuHen = new System.Windows.Forms.Button();
+            this.dgvDanhSach = new ThietKeControl.UC_DanhSach();
+            this.btnThuoc = new System.Windows.Forms.Button();
+            this.btnBenh = new System.Windows.Forms.Button();
             this.btnBenhNhan = new System.Windows.Forms.Button();
             this.btnToaThuoc = new System.Windows.Forms.Button();
-            this.dgvDanhSach = new ThietKeControl.UC_DanhSach();
             this.SuspendLayout();
             // 
-            // btnPhieuHen
+            // dgvDanhSach
             // 
-            this.btnPhieuHen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhieuHen.Image = global::GUI.Properties.Resources.icons8_appointments_50;
-            this.btnPhieuHen.Location = new System.Drawing.Point(386, 12);
-            this.btnPhieuHen.Name = "btnPhieuHen";
-            this.btnPhieuHen.Size = new System.Drawing.Size(146, 127);
-            this.btnPhieuHen.TabIndex = 1;
-            this.btnPhieuHen.Text = "Phiếu hẹn";
-            this.btnPhieuHen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPhieuHen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnPhieuHen.UseVisualStyleBackColor = true;
-            this.btnPhieuHen.Click += new System.EventHandler(this.btnPhieuHen_Click);
+            this.dgvDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDanhSach.Location = new System.Drawing.Point(12, 162);
+            this.dgvDanhSach.Name = "dgvDanhSach";
+            this.dgvDanhSach.Size = new System.Drawing.Size(1213, 546);
+            this.dgvDanhSach.TabIndex = 0;
+            // 
+            // btnThuoc
+            // 
+            this.btnThuoc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThuoc.Image = global::GUI.Properties.Resources.icons8_drug_50;
+            this.btnThuoc.Location = new System.Drawing.Point(12, 12);
+            this.btnThuoc.Name = "btnThuoc";
+            this.btnThuoc.Size = new System.Drawing.Size(146, 127);
+            this.btnThuoc.TabIndex = 1;
+            this.btnThuoc.Text = "Thuốc";
+            this.btnThuoc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThuoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnThuoc.UseVisualStyleBackColor = true;
+            this.btnThuoc.Click += new System.EventHandler(this.btnThuoc_Click);
+            // 
+            // btnBenh
+            // 
+            this.btnBenh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBenh.Image = global::GUI.Properties.Resources.icons8_disease_50;
+            this.btnBenh.Location = new System.Drawing.Point(404, 12);
+            this.btnBenh.Name = "btnBenh";
+            this.btnBenh.Size = new System.Drawing.Size(146, 127);
+            this.btnBenh.TabIndex = 1;
+            this.btnBenh.Text = "Bệnh";
+            this.btnBenh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBenh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBenh.UseVisualStyleBackColor = true;
+            this.btnBenh.Click += new System.EventHandler(this.btnBenh_Click);
             // 
             // btnBenhNhan
             // 
             this.btnBenhNhan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBenhNhan.Image = global::GUI.Properties.Resources.icons8_patient_50;
-            this.btnBenhNhan.Location = new System.Drawing.Point(199, 12);
+            this.btnBenhNhan.Location = new System.Drawing.Point(208, 12);
             this.btnBenhNhan.Name = "btnBenhNhan";
             this.btnBenhNhan.Size = new System.Drawing.Size(146, 127);
             this.btnBenhNhan.TabIndex = 1;
@@ -66,7 +91,7 @@
             // 
             this.btnToaThuoc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToaThuoc.Image = global::GUI.Properties.Resources.icons8_prescription_50;
-            this.btnToaThuoc.Location = new System.Drawing.Point(12, 12);
+            this.btnToaThuoc.Location = new System.Drawing.Point(600, 12);
             this.btnToaThuoc.Name = "btnToaThuoc";
             this.btnToaThuoc.Size = new System.Drawing.Size(146, 127);
             this.btnToaThuoc.TabIndex = 1;
@@ -76,22 +101,13 @@
             this.btnToaThuoc.UseVisualStyleBackColor = true;
             this.btnToaThuoc.Click += new System.EventHandler(this.btnToaThuoc_Click);
             // 
-            // dgvDanhSach
-            // 
-            this.dgvDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvDanhSach.Location = new System.Drawing.Point(12, 162);
-            this.dgvDanhSach.Name = "dgvDanhSach";
-            this.dgvDanhSach.Size = new System.Drawing.Size(1213, 546);
-            this.dgvDanhSach.TabIndex = 0;
-            // 
             // frmDanhSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 720);
-            this.Controls.Add(this.btnPhieuHen);
+            this.Controls.Add(this.btnThuoc);
+            this.Controls.Add(this.btnBenh);
             this.Controls.Add(this.btnBenhNhan);
             this.Controls.Add(this.btnToaThuoc);
             this.Controls.Add(this.dgvDanhSach);
@@ -105,10 +121,10 @@
         }
 
         #endregion
-
-        private ThietKeControl.UC_DanhSach dgvDanhSach;
         private System.Windows.Forms.Button btnToaThuoc;
         private System.Windows.Forms.Button btnBenhNhan;
-        private System.Windows.Forms.Button btnPhieuHen;
+        private ThietKeControl.UC_DanhSach dgvDanhSach;
+        private System.Windows.Forms.Button btnBenh;
+        private System.Windows.Forms.Button btnThuoc;
     }
 }

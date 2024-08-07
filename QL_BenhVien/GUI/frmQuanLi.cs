@@ -35,5 +35,11 @@ namespace GUI
             frm.Show();
             this.Close();
         }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+            frmChinhSua frm = new frmChinhSua();
+            frm.Show();
+        }
     }
 }

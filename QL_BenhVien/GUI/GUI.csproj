@@ -147,6 +147,12 @@
     <Compile Include="FrmChanDoan.Designer.cs">
       <DependentUpon>FrmChanDoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChinhSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChinhSua.Designer.cs">
+      <DependentUpon>frmChinhSua.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmChanDoan.resx">
       <DependentUpon>FrmChanDoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChinhSua.resx">
+      <DependentUpon>frmChinhSua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
@@ -312,6 +321,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-prescription-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-disease-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-drug-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clinic-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reset-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

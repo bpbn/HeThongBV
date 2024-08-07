@@ -26,7 +26,7 @@ namespace GUI
 
         private void frmDanhSach_Load(object sender, EventArgs e)
         {
-            loadData("TOATHUOC");
+            loadData("THUOC");
         }
 
         private void btnToaThuoc_Click(object sender, EventArgs e)
@@ -39,14 +39,14 @@ namespace GUI
             loadData("BENHNHAN");
         }
 
-        private void btnPhieuHen_Click(object sender, EventArgs e)
+        private void btnThuoc_Click(object sender, EventArgs e)
         {
-            loadData("PHIEUHEN");
+            loadData("THUOC");
         }
 
-        private void btnLichLamViec_Click(object sender, EventArgs e)
+        private void btnBenh_Click(object sender, EventArgs e)
         {
-
+            loadData("BENH");
         }
     }
 }

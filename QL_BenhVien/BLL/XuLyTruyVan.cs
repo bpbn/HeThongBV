@@ -26,6 +26,31 @@ namespace BLL
             return dal.loadBenh();
         }
 
+        public List<NHANVIEN> dsNhanVien()
+        {
+            return dal.loadNhanVien();
+        }
+
+        public List<PHONGKHAM> dsPhongKham()
+        {
+            return dal.loadPhongKham();
+        }
+
+        public List<TAIKHOAN> dsTaiKhoan()
+        {
+            return dal.loadTaiKhoan();
+        }
+
+        public List<string> dsChucVu()
+        {
+            return dal.loadChucVu();
+        }
+
+        public List<string> dsLoaiTaiKhoan()
+        {
+            return dal.loadTaiKhoan().Select(tk => tk.LOAITAIKHOAN).Distinct().ToList();
+        }
+
         public PHIEUKHAM LayThongTinPhieuKham(string maPhieuKham)
         {
             return dal.LoadPhieuKham(maPhieuKham);
@@ -123,6 +148,22 @@ namespace BLL
         public void SaveBenhNhan(string maBenhNhan, string tenBenhNhan, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi)
         {
             luuDataBLL.SaveBenhNhan(maBenhNhan, tenBenhNhan, ngaySinh, gioiTinh, sdt, diaChi);
+        }
+
+        public string TaoMaNhanVien()
+        {
+            int count = dal.loadNhanVien().Count();
+            count++;
+            string maMoi = "NV0" + count.ToString("D3");
+            return maMoi;
+        }
+
+        public string TaoMaTaiKhoan()
+        {
+            int count = dal.loadPhongKham().Count();
+            count++;
+            string maMoi = "TK0" + count.ToString("D3");
+            return maMoi;
         }
     }
 }
