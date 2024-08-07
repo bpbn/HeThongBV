@@ -1,6 +1,6 @@
 # Phát Triển Ứng Dụng Thông Minh
 # Thành viên
-<h4>Tên nhóm: Sea  </h4>
+<h4>Tên nhóm: Epiphany  </h4>
 
 >>**Thầy  Bùi Công Danh**
   
