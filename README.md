@@ -26,9 +26,9 @@
 ### Yêu cầu 
 <p>Thuật toán: Xếp lịch làm việc tự động  </p>
 
-<p>Web: Angular </p>
+<p>Web </p>
 <p>Ngôn ngữ: Javascript, Java </p>
-<p>Framework: Spring boot </p>
+<p>Framework: Angular, Spring boot </p>
 
 <p>Nghiệp vụ</p>
 
