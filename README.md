@@ -12,6 +12,8 @@
 ### Sử dụng 
  - .Net Framework version 4.8
  - Visual studio 2019-2022
+ - Visual studio code
+ - IntelliJ
 
 -----------------------------------------------
 # Dự án
