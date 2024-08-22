@@ -28,5 +28,12 @@ namespace GUI
             frmXepLichLamViec frmXepLichLamViec = new frmXepLichLamViec();
             frmXepLichLamViec.Show();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmDangNhap frm = new frmDangNhap();
+            frm.Show();
+            this.Close();
+        }
     }
 }

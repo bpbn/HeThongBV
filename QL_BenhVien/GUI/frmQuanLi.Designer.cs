@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnLichLamViec = new System.Windows.Forms.Button();
-            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnChinhSua = new System.Windows.Forms.Button();
             this.btnXemDanhSach = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -38,9 +38,10 @@
             // 
             this.btnLichLamViec.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLichLamViec.Image = global::GUI.Properties.Resources.icons8_calendar_64;
-            this.btnLichLamViec.Location = new System.Drawing.Point(787, 52);
+            this.btnLichLamViec.Location = new System.Drawing.Point(493, 40);
+            this.btnLichLamViec.Margin = new System.Windows.Forms.Padding(2);
             this.btnLichLamViec.Name = "btnLichLamViec";
-            this.btnLichLamViec.Size = new System.Drawing.Size(175, 139);
+            this.btnLichLamViec.Size = new System.Drawing.Size(131, 113);
             this.btnLichLamViec.TabIndex = 0;
             this.btnLichLamViec.Text = "Xếp lịch làm việc";
             this.btnLichLamViec.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -48,26 +49,28 @@
             this.btnLichLamViec.UseVisualStyleBackColor = true;
             this.btnLichLamViec.Click += new System.EventHandler(this.btnLichLamViec_Click);
             // 
-            // btnThongKe
+            // btnBack
             // 
-            this.btnThongKe.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.Image = global::GUI.Properties.Resources.icons8_statistic_64;
-            this.btnThongKe.Location = new System.Drawing.Point(546, 52);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(175, 139);
-            this.btnThongKe.TabIndex = 0;
-            this.btnThongKe.Text = "Thống kê";
-            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Image = global::GUI.Properties.Resources.icons8_back_40;
+            this.btnBack.Location = new System.Drawing.Point(9, 10);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(60, 56);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnChinhSua
             // 
             this.btnChinhSua.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChinhSua.Image = global::GUI.Properties.Resources.icons8_edit_64;
-            this.btnChinhSua.Location = new System.Drawing.Point(305, 52);
+            this.btnChinhSua.Location = new System.Drawing.Point(124, 40);
+            this.btnChinhSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnChinhSua.Name = "btnChinhSua";
-            this.btnChinhSua.Size = new System.Drawing.Size(175, 139);
+            this.btnChinhSua.Size = new System.Drawing.Size(131, 113);
             this.btnChinhSua.TabIndex = 0;
             this.btnChinhSua.Text = "Chỉnh sửa";
             this.btnChinhSua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -78,9 +81,10 @@
             // 
             this.btnXemDanhSach.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemDanhSach.Image = global::GUI.Properties.Resources.icons8_list_64;
-            this.btnXemDanhSach.Location = new System.Drawing.Point(64, 52);
+            this.btnXemDanhSach.Location = new System.Drawing.Point(308, 40);
+            this.btnXemDanhSach.Margin = new System.Windows.Forms.Padding(2);
             this.btnXemDanhSach.Name = "btnXemDanhSach";
-            this.btnXemDanhSach.Size = new System.Drawing.Size(175, 139);
+            this.btnXemDanhSach.Size = new System.Drawing.Size(131, 113);
             this.btnXemDanhSach.TabIndex = 0;
             this.btnXemDanhSach.Text = "Xem danh sách";
             this.btnXemDanhSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -88,18 +92,19 @@
             this.btnXemDanhSach.UseVisualStyleBackColor = true;
             this.btnXemDanhSach.Click += new System.EventHandler(this.btnXemDanhSach_Click);
             // 
-            // frmMain
+            // frmQuanLi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 240);
+            this.ClientSize = new System.Drawing.Size(765, 195);
             this.Controls.Add(this.btnLichLamViec);
-            this.Controls.Add(this.btnThongKe);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnChinhSua);
             this.Controls.Add(this.btnXemDanhSach);
-            this.Name = "frmMain";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "frmQuanLi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMain";
+            this.Text = "Danh mục quản lý";
             this.ResumeLayout(false);
 
         }
@@ -108,7 +113,7 @@
 
         private System.Windows.Forms.Button btnXemDanhSach;
         private System.Windows.Forms.Button btnChinhSua;
-        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnLichLamViec;
     }
 }

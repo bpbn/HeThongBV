@@ -41,10 +41,11 @@ namespace BLL
                     foreach (var phong in danhSachPhong)
                     {
                         var bacSiCoThePhanCong = danhSachBacSi
-                            .Where(b => lichLamViecMoi.Count(llv => llv.MANHANVIEN == b.MANHANVIEN) < 3)
+                            .Where(b => lichLamViecMoi.Count(llv => llv.MANHANVIEN == b.MANHANVIEN && llv.NGAYLAM == ngay && llv.CALAM == ca) == 0 &&
+                                lichLamViecMoi.Count(llv => llv.MANHANVIEN == b.MANHANVIEN) < 3)
                             .ToList();
 
-                        if (!bacSiCoThePhanCong.Any() || soPhongDaMoTrongNgay[ngay] >= 10)
+                        if (!bacSiCoThePhanCong.Any() || soPhongDaMoTrongNgay[ngay] >= 5)
                             continue;
 
                         var bacSi = bacSiCoThePhanCong[random.Next(bacSiCoThePhanCong.Count)];

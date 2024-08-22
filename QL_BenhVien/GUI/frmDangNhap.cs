@@ -59,7 +59,7 @@ namespace GUI
                         form = new frmPhieuKham(maNhanVien);
                         break;
                     case "Bác sĩ":
-                        form = new FrmChanDoan();
+                        form = new frmBacSi(maNhanVien);
                         break;
                     default:
                         MessageBox.Show("Không xác định được quyền của người dùng!", "Thông báo");

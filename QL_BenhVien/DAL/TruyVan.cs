@@ -80,6 +80,11 @@ namespace DAL
         {
             return qlbv.LICHLAMVIECs.Select(llv => llv).ToList<LICHLAMVIEC>();
         }
+        public List<LICHLAMVIEC> layLichLamViecCuaBacSi(string maNhanVien)
+        {
+            return qlbv.LICHLAMVIECs.Where(llv => llv.MANHANVIEN == maNhanVien).ToList();
+        }
+
         public string LayTenPhongLamViec(string maNhanVien)
         {
             var phongLamViec = qlbv.LICHLAMVIECs
